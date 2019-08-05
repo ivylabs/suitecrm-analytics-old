@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<style-definition xmlns="http://reporting.pentaho.org/namespaces/engine/classic/bundle/style/1.0" xmlns:layout="http://reporting.pentaho.org/namespaces/engine/classic/bundle/layout/1.0" xmlns:core="http://reporting.pentaho.org/namespaces/engine/attributes/core" xmlns:html="http://reporting.pentaho.org/namespaces/engine/attributes/html" xmlns:swing="http://reporting.pentaho.org/namespaces/engine/attributes/swing" xmlns:pdf="http://reporting.pentaho.org/namespaces/engine/attributes/pdf" xmlns:designtime="http://reporting.pentaho.org/namespaces/report-designer/2.0" xmlns:crosstab="http://reporting.pentaho.org/namespaces/engine/attributes/crosstab" xmlns:pentaho="http://reporting.pentaho.org/namespaces/engine/attributes/pentaho" xmlns:table="http://reporting.pentaho.org/namespaces/engine/attributes/table" xmlns:page="http://jfreereport.sourceforge.net/namespaces/reports/legacy/ext">
+  <rule>
+    <selector>.header</selector>
+    <styles>
+      <border-styles background-color="#534d64" padding-top="5" padding-left="2" padding-bottom="5"/>
+      <common-styles vertical-alignment="middle"/>
+      <content-styles color="white"/>
+      <spatial-styles min-height="40"/>
+      <text-styles font-face="Ubuntu" bold="true" font-size="16"/>
+    </styles>
+  </rule>
+  <rule>
+    <selector>.subheader</selector>
+    <styles>
+      <border-styles background-color="#f08377" padding-top="2" padding-left="5" padding-bottom="2"/>
+      <common-styles vertical-alignment="middle"/>
+      <content-styles color="white"/>
+      <text-styles font-face="Ubuntu" bold="true" font-size="14"/>
+    </styles>
+  </rule>
+  <rule>
+    <selector>.detailsBand</selector>
+  </rule>
+</style-definition>

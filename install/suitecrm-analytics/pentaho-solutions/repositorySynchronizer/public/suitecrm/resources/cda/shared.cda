@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CDADescriptor>
+   <DataSources>
+      <Connection id="notificationsQuery" type="scripting.scripting">
+         <Initscript/>
+         <Language>beanshell</Language>
+      </Connection>
+      <Connection id="script1" type="scripting.scripting">
+         <Initscript/>
+         <Language>beanshell</Language>
+      </Connection>
+      <Connection id="getLeadSources" type="sql.jndi">
+         <Jndi>suitecrm_dwh</Jndi>
+      </Connection>
+      <Connection id="getLeadsBySource" type="sql.jndi">
+         <Jndi>suitecrm_dwh</Jndi>
+      </Connection>
+      <Connection id="getLeadsCountBySource" type="sql.jndi">
+         <Jndi>suitecrm_dwh</Jndi>
+      </Connection>
+      <Connection id="getLeadByStatusDateMDX" type="mondrian.jndi">
+         <Catalog>mondrian:/SuiteCRM</Catalog>
+         <Jndi>suitecrm_dwh</Jndi>
+      </Connection>
+      <Connection id="getLeadBySourceMDX" type="mondrian.jndi">
+         <Catalog>mondrian:/SuiteCRM</Catalog>
+         <Jndi>suitecrm_dwh</Jndi>
+      </Connection>
+      <Connection id="getLeadSourcesMDX" type="mondrian.jndi">
+         <Catalog>mondrian:/SuiteCRM</Catalog>
+         <Jndi>suitecrm_dwh</Jndi>
+      </Connection>
+      <Connection id="getOpportunitiesbyDate" type="mondrian.jndi">
+         <Catalog>mondrian:/SuiteCRM</Catalog>
+         <Jndi>suitecrm_dwh</Jndi>
+      </Connection>
+   </DataSources>
+   <DataAccess access="public" connection="notificationsQuery" id="notificationsQuery"
+               type="jsonScriptable">
+      <Name>notificationsQuery</Name>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters/>
+      <Query><![CDATA[{
+   "resultset":[
+      ["New Updates", "You have new updates","http://www.google.com","2017-01-01"],
+      ["New Services", "We have updated services","http://www.google.com","2017-01-01"]
+   ],
+
+   "metadata":[
+      {"colIndex":0,"colType":"String","colName":"Notification Title"},
+      {"colIndex":0,"colType":"String","colName":"Notification Text"},
+      {"colIndex":0,"colType":"String","colName":"Notification Link"},
+      {"colIndex":0,"colType":"String","colName":"Notification Date"}
+   ]
+}]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="script1" id="script1" type="jsonScriptable">
+      <Name>script1</Name>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters/>
+      <Query><![CDATA[{
+   "resultset":[
+      ["Foo", 10],
+      ["Bar", 20]
+   ],
+
+   "metadata":[
+      {"colIndex":0,"colType":"String","colName":"Name"},
+      {"colIndex":1,"colType":"Integer","colName":"Value"}
+   ]
+}]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="getLeadSources" id="getLeadSources" type="sql">
+      <Name>getLeadSources</Name>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters/>
+      <Query><![CDATA[select distinct(LEAD_SOURCE) 
+from D_LEADS]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="getLeadsBySource" id="getLeadsBySource" type="sql">
+      <Name>getLeadsBySource</Name>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters>
+         <Parameter default="Email" name="leadSource" type="String"/>
+      </Parameters>
+      <Query><![CDATA[select LEAD_ID, LEAD_TITLE, LEAD_SOURCE 
+from D_LEADS
+where LEAD_SOURCE = ${leadSource}]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="getLeadsCountBySource" id="getLeadsCountBySource"
+               type="sql">
+      <Name>getLeadsCountBySource</Name>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters/>
+      <Query><![CDATA[select LEAD_SOURCE, COUNT(*) 
+from D_LEADS
+GROUP BY LEAD_SOURCE]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="getLeadByStatusDateMDX" id="getLeadByStatusDateMDX"
+               type="mdx">
+      <Name>getLeadByStatusDateMDX</Name>
+      <BandedMode>compact</BandedMode>
+      <Cache duration="3600" enabled="false"/>
+      <Columns/>
+      <Parameters>
+         <Parameter default="[Measures].[Total Leads]" name="measure" type="String"/>
+         <Parameter default="[Lead Status].[All]" name="leadStatus" type="StringArray"/>
+         <Parameter default="2017-04-20" name="dateFrom" type="String"/>
+         <Parameter default="2017-04-20" name="dateTo" type="String"/>
+         <Parameter default="Month" name="granularity" type="String"/>
+      </Parameters>
+      <Query><![CDATA[select NON EMPTY {${measure}} ON COLUMNS,
+  NON EMPTY Crossjoin({${leadStatus}},[Lead Created Date.Descriptive Long].[${granularity}].Members) ON ROWS
+from [Leads]
+where ([Lead Created Date Filter].[${dateFrom}] : [Lead Created Date Filter].[${dateTo}])]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="getLeadBySourceMDX" id="getLeadBySourceMDX"
+               type="mdx">
+      <Name>getLeadBySourceMDX</Name>
+      <BandedMode>compact</BandedMode>
+      <Cache duration="3600" enabled="false"/>
+      <Columns/>
+      <Parameters>
+         <Parameter default="[Lead Source].[All]" name="leadSource" type="StringArray"/>
+      </Parameters>
+      <Query><![CDATA[select NON EMPTY {[Measures].[Total Leads]} ON COLUMNS,
+  NON EMPTY Crossjoin(Descendants([Lead Location], 3), [Lead Account].[All].Children) ON ROWS
+from [Leads]
+where {${leadSource}}]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="getLeadSourcesMDX" id="getLeadSourcesMDX"
+               type="mdx">
+      <Name>getLeadSourcesMDX</Name>
+      <BandedMode>compact</BandedMode>
+      <Cache duration="3600" enabled="false"/>
+      <Columns/>
+      <Parameters/>
+      <Query><![CDATA[WITH 
+MEMBER [Measures].[Unique Name] AS [Lead Source].CurrentMember.UniqueName
+select [Measures].[Unique Name] ON COLUMNS,
+{[Lead Source].[All], [Lead Source].[Source].Members} ON ROWS
+from [Leads]]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="getOpportunitiesbyDate" id="getOpportunitiesbyDate"
+               type="mdx">
+      <Name>getOpportunitiesbyDate</Name>
+      <BandedMode>compact</BandedMode>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters>
+         <Parameter default="Closed Won" name="salesStage" type="String"/>
+         <Parameter default="Opportunity Amount" name="measure" type="String"/>
+      </Parameters>
+      <Query><![CDATA[select NON EMPTY {[Measures].[${measure}]} ON COLUMNS,
+  NON EMPTY Descendants([Expected Close Date].[All Expected Close Dates], 4) ON ROWS
+from [Opportunities]
+where [Opportunity Stage].[${salesStage}]]]></Query>
+   </DataAccess>
+</CDADescriptor>

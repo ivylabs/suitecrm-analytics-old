@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CDADescriptor>
+   <DataSources>
+      <Connection id="GET_MIN_MAX_LEAD_MONTHLY_PERIODS" type="sql.jndi">
+         <Jndi>SuiteCRMAnalytics</Jndi>
+      </Connection>
+      <Connection id="GET_LEAD_MONTHLY_PERIODS_YYYY_MM" type="sql.jndi">
+         <Jndi>SuiteCRMAnalytics</Jndi>
+      </Connection>
+      <Connection id="GET_LEAD_MONTHLY_PERIODS" type="sql.jndi">
+         <Jndi>SuiteCRMAnalytics</Jndi>
+      </Connection>
+      <Connection id="GET_CASE_MONTHLY_PERIODS" type="sql.jndi">
+         <Jndi>SuiteCRMAnalytics</Jndi>
+      </Connection>
+      <Connection id="GET_CAMPAIGN_TYPES" type="sql.jndi">
+         <Jndi>SuiteCRMAnalytics</Jndi>
+      </Connection>
+      <Connection id="GET_CAMPAIGNS" type="sql.jndi">
+         <Jndi>SuiteCRMAnalytics</Jndi>
+      </Connection>
+   </DataSources>
+   <DataAccess access="public" connection="GET_MIN_MAX_LEAD_MONTHLY_PERIODS"
+               id="GET_MIN_MAX_LEAD_MONTHLY_PERIODS"
+               type="sql">
+      <Name>GET_MIN_MAX_LEAD_MONTHLY_PERIODS</Name>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters/>
+      <Query><![CDATA[SELECT
+    MIN(DD.`YYYYMM`) AS MIN_MONTH_PERIOD
+	,MAX(DD.`YYYYMM`) AS MAX_MONTH_PERIOD
+FROM F_LEAD_MANAGEMENT FLM
+INNER JOIN D_DATE DD
+	ON FLM.LEAD_CREATED_TK = DD.DATE_TK]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="GET_LEAD_MONTHLY_PERIODS_YYYY_MM"
+               id="GET_LEAD_MONTHLY_PERIODS_YYYY_MM"
+               type="sql">
+      <Name>GET_LEAD_MONTHLY_PERIODS_YYYY_MM</Name>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters/>
+      <Query><![CDATA[SELECT '9999-99' AS 'YYYY-DD', 'All Periods' as DATE_FILTER
+UNION
+SELECT
+    DD.`YYYY-MM`
+	,CONCAT(DD.YEAR4,' - ', DD.MONTH_LONG_DESC) AS DATE_FILTER
+FROM F_LEAD_MANAGEMENT FLM
+INNER JOIN D_DATE DD
+	ON FLM.LEAD_CREATED_TK = DD.DATE_TK
+GROUP BY 1,2
+ORDER BY 1 DESC;]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="GET_LEAD_MONTHLY_PERIODS"
+               id="GET_LEAD_MONTHLY_PERIODS"
+               type="sql">
+      <Name>GET_LEAD_MONTHLY_PERIODS</Name>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters/>
+      <Query><![CDATA[SELECT
+    DD.`YYYYMM`
+	,CONCAT(DD.YEAR4,' - ', DD.MONTH_LONG_DESC) AS DATE_FILTER
+FROM F_LEAD_MANAGEMENT FLM
+INNER JOIN D_DATE DD
+	ON FLM.LEAD_CREATED_TK = DD.DATE_TK
+GROUP BY 1,2
+ORDER BY 1 DESC;]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="GET_CASE_MONTHLY_PERIODS"
+               id="GET_CASE_MONTHLY_PERIODS"
+               type="sql">
+      <Name>GET_CASE_MONTHLY_PERIODS</Name>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters/>
+      <Query><![CDATA[SELECT '9999-99' AS 'YYYY-DD', 'All Periods' as DATE_FILTER
+UNION
+SELECT
+    DD.`YYYY-MM`
+	,CONCAT(DD.YEAR4,' - ', DD.MONTH_LONG_DESC) AS DATE_FILTER
+FROM F_CASE_MANAGEMENT FCM
+INNER JOIN D_DATE DD
+	ON FCM.CASE_CREATED_TK = DD.DATE_TK
+GROUP BY 1,2
+ORDER BY 1 DESC;]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="GET_CAMPAIGN_TYPES" id="GET_CAMPAIGN_TYPES"
+               type="sql">
+      <Name>GET_CAMPAIGN_TYPES</Name>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters/>
+      <Query><![CDATA[SELECT 'All Campaign Types' AS CAMPAIGN_TYPE
+UNION
+SELECT DISTINCT(CAMPAIGN_TYPE) FROM D_CAMPAIGNS]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="GET_CAMPAIGNS" id="GET_CAMPAIGNS" type="sql">
+      <Name>GET_CAMPAIGNS</Name>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters/>
+      <Query><![CDATA[SELECT 'All Campaigns' as CAMPAIGN_NAME
+UNION
+SELECT DISTINCT(CAMPAIGN_NAME) FROM D_CAMPAIGNS]]></Query>
+   </DataAccess>
+</CDADescriptor>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CDADescriptor>
+   <DataSources>
+      <Connection id="HDS2" type="mondrian.jndi">
+         <Catalog>mondrian:/HDS</Catalog>
+         <Jndi>HDS</Jndi>
+      </Connection>
+   </DataSources>
+   <DataAccess access="public" connection="HDS2" id="HDS2" type="mdx">
+      <Name>HDS2</Name>
+      <BandedMode>compact</BandedMode>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters/>
+      <Query><![CDATA[select NON EMPTY {[Measures].[ServiceCount]} ON COLUMNS,
+  NON EMPTY NonEmptyCrossJoin(NonEmptyCrossJoin(Descendants([Geography], 4), [ServiceUnique].Children),[Message].Children) ON ROWS
+from [HDS]]]></Query>
+   </DataAccess>
+</CDADescriptor>
