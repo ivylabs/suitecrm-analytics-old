@@ -1,0 +1,275 @@
+{
+  "components" : {
+    "rows" : [
+      {
+        "id" : "SCRIPT",
+        "name" : "Scripts",
+        "parent" : "UnIqEiD",
+        "properties" : [
+          {
+            "name" : "Group",
+            "type" : "Label",
+            "value" : "Scripts"
+          }
+        ],
+        "type" : "Label",
+        "typeDesc" : "\u003Ci\u003EGroup\u003C/i\u003E"
+      },
+      {
+        "id" : "3d1ce61d-9b04-da9c-5e60-8c2969854ad3",
+        "parent" : "SCRIPT",
+        "properties" : [
+          {
+            "name" : "name",
+            "type" : "Id",
+            "value" : "INIT"
+          },
+          {
+            "name" : "javaScript",
+            "type" : "JavaScript",
+            "value" : "Dashboards.preInit = function(){\n\n\n    var dataset = {  \n       \u0022metadata\u0022:[  \n          {  \n             \u0022colName\u0022:\u0022REPORT\u0022,\n             \u0022colType\u0022:\u0022String\u0022,\n             \u0022colIndex\u0022:0\n          },\n          {  \n             \u0022colName\u0022:\u0022PARAMETER\u0022,\n             \u0022colType\u0022:\u0022String\u0022,\n             \u0022colIndex\u0022:1\n          },\n          {  \n             \u0022colName\u0022:\u0022PARAMETER_LABEL\u0022,\n             \u0022colType\u0022:\u0022String\u0022,\n             \u0022colIndex\u0022:2\n          }\n       ],\n       \u0022resultset\u0022:[  \n          [  \n             \u0022Cases\u0022,\n             \u0022pSelectStyle\u0022,\n             \u0022Select Style\u0022\n          ],\n          [  \n             \u0022Cases\u0022,\n             \u0022pCaseTypeFilter\u0022,\n             \u0022Select Case Type\u0022\n          ],\n          [  \n             \u0022Cases\u0022,\n             \u0022pCaseCreatedDateFilter\u0022,\n             \u0022Select Case Created Period\u0022\n          ]\n       ],\n       \u0022queryInfo\u0022:{  \n          \u0022totalRows\u0022:\u00223\u0022\n       }\n    }\n\n    var dashComponents = []\n    \n    $.each(dataset.resultset, function(i,v){\n        \n        console.log(v);\n        \n        Dashboards.addParameter(v[1], \u00220\u0022);\n        Dashboards.setParameterViewMode(v[1], \u0022unused\u0022);\n        \n        Dashboards.addComponent({\n            type: \u0022BSSelectBaseComponent\u0022,\n            name: \u0022render_\u0022+v[1]+\u0022Comp\u0022,\n            htmlObject: \u0022C\u0022+i,\n            priority: 5,\n            parameter: v[1],\n            executeAtStart: false,\n            listeners: [],\n            parameters: [],\n            valuesArray: [],\n            valueAsId: false,\n            buttonBlock: true,\n            buttonIcon: \u0022none\u0022,\n            prependIcon: false,\n            buttonType: \u0022btn-default\u0022,\n            buttonLiveSearch: true,\n            itemsSize: \u002210\u0022,\n            multipleSelectMode: true,\n            maxMultiSelect: 0,\n            multipleSelectTextFormat: true,\n            maxMultiSelectTextFormat: 0,\n            multiSelectTitle: \u0022Nothing selected\u0022,\n            showTickIcon: false,\n            showMenuArrow: false,\n            queryDefinition:  {\n                dataAccessId: v[1]+\u0022Query\u0022,\n                path: \u0022/public/SuiteCRM Analytics/System/Resources/CDA/FILTERS.cda\u0022,\n            }\n        });\n        \n        \n    });\n    \n    // Manually refire all the components\n    \n    Dashboards.updateAll(Dashboards.components)\n    \n} "
+          }
+        ],
+        "rowName" : "Function",
+        "type" : "ComponentsFunction",
+        "typeDesc" : "JavaScript function"
+      }
+    ]
+  },
+  "datasources" : {
+    "rows" : [ ]
+  },
+  "filename" : "/public/SuiteCRM+Analytics/Development/Dashboards/Add+CDF+Component.cdfde",
+  "layout" : {
+    "rows" : [
+      {
+        "id" : "007130d2-d8fa-a985-d318-f2e17ee44f93",
+        "parent" : "UnIqEiD",
+        "properties" : [
+          {
+            "name" : "name",
+            "type" : "Id",
+            "value" : ""
+          },
+          {
+            "name" : "height",
+            "type" : "Integer",
+            "value" : ""
+          },
+          {
+            "name" : "backgroundColor",
+            "type" : "Color",
+            "value" : ""
+          },
+          {
+            "name" : "roundCorners",
+            "type" : "RoundCorners",
+            "value" : ""
+          },
+          {
+            "name" : "textAlign",
+            "type" : "TextAlign",
+            "value" : ""
+          },
+          {
+            "name" : "cssClass",
+            "type" : "String",
+            "value" : ""
+          }
+        ],
+        "type" : "LayoutRow",
+        "typeDesc" : "Row"
+      },
+      {
+        "id" : "b43b4ed5-978b-4fe0-59e0-76c7292e39bf",
+        "parent" : "007130d2-d8fa-a985-d318-f2e17ee44f93",
+        "properties" : [
+          {
+            "name" : "name",
+            "type" : "Id",
+            "value" : "C0"
+          },
+          {
+            "name" : "bootstrapExtraSmall",
+            "type" : "String",
+            "value" : "12"
+          },
+          {
+            "name" : "bootstrapSmall",
+            "type" : "String",
+            "value" : "12"
+          },
+          {
+            "name" : "bootstrapMedium",
+            "type" : "String",
+            "value" : "4"
+          },
+          {
+            "name" : "bootstrapLarge",
+            "type" : "String",
+            "value" : "4"
+          },
+          {
+            "name" : "bootstrapCssClass",
+            "type" : "String",
+            "value" : ""
+          },
+          {
+            "name" : "height",
+            "type" : "Integer",
+            "value" : ""
+          },
+          {
+            "name" : "backgroundColor",
+            "type" : "Color",
+            "value" : ""
+          },
+          {
+            "name" : "roundCorners",
+            "type" : "RoundCorners",
+            "value" : ""
+          },
+          {
+            "name" : "textAlign",
+            "type" : "TextAlign",
+            "value" : ""
+          },
+          {
+            "name" : "cssClass",
+            "type" : "String",
+            "value" : ""
+          }
+        ],
+        "type" : "LayoutBootstrapColumn",
+        "typeDesc" : "Column"
+      },
+      {
+        "id" : "bdcc2cf8-5fb4-57ce-00f6-3e96ec926b9b",
+        "parent" : "007130d2-d8fa-a985-d318-f2e17ee44f93",
+        "properties" : [
+          {
+            "name" : "name",
+            "type" : "Id",
+            "value" : "C1"
+          },
+          {
+            "name" : "bootstrapExtraSmall",
+            "type" : "String",
+            "value" : "12"
+          },
+          {
+            "name" : "bootstrapSmall",
+            "type" : "String",
+            "value" : "12"
+          },
+          {
+            "name" : "bootstrapMedium",
+            "type" : "String",
+            "value" : "4"
+          },
+          {
+            "name" : "bootstrapLarge",
+            "type" : "String",
+            "value" : "4"
+          },
+          {
+            "name" : "bootstrapCssClass",
+            "type" : "String",
+            "value" : ""
+          },
+          {
+            "name" : "height",
+            "type" : "Integer",
+            "value" : ""
+          },
+          {
+            "name" : "backgroundColor",
+            "type" : "Color",
+            "value" : ""
+          },
+          {
+            "name" : "roundCorners",
+            "type" : "RoundCorners",
+            "value" : ""
+          },
+          {
+            "name" : "textAlign",
+            "type" : "TextAlign",
+            "value" : ""
+          },
+          {
+            "name" : "cssClass",
+            "type" : "String",
+            "value" : ""
+          }
+        ],
+        "type" : "LayoutBootstrapColumn",
+        "typeDesc" : "Column"
+      },
+      {
+        "id" : "b5cd301e-9fee-75bb-17e3-792b7a40cfd8",
+        "parent" : "007130d2-d8fa-a985-d318-f2e17ee44f93",
+        "properties" : [
+          {
+            "name" : "name",
+            "type" : "Id",
+            "value" : "C2"
+          },
+          {
+            "name" : "bootstrapExtraSmall",
+            "type" : "String",
+            "value" : "12"
+          },
+          {
+            "name" : "bootstrapSmall",
+            "type" : "String",
+            "value" : "12"
+          },
+          {
+            "name" : "bootstrapMedium",
+            "type" : "String",
+            "value" : "4"
+          },
+          {
+            "name" : "bootstrapLarge",
+            "type" : "String",
+            "value" : "4"
+          },
+          {
+            "name" : "bootstrapCssClass",
+            "type" : "String",
+            "value" : ""
+          },
+          {
+            "name" : "height",
+            "type" : "Integer",
+            "value" : ""
+          },
+          {
+            "name" : "backgroundColor",
+            "type" : "Color",
+            "value" : ""
+          },
+          {
+            "name" : "roundCorners",
+            "type" : "RoundCorners",
+            "value" : ""
+          },
+          {
+            "name" : "textAlign",
+            "type" : "TextAlign",
+            "value" : ""
+          },
+          {
+            "name" : "cssClass",
+            "type" : "String",
+            "value" : ""
+          }
+        ],
+        "type" : "LayoutBootstrapColumn",
+        "typeDesc" : "Column"
+      }
+    ],
+    "title" : "CDF - Sample structure"
+  }
+}

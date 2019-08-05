@@ -1,0 +1,188 @@
+<div id="selectAnchor"></div>
+
+<script language="javascript" type="text/javascript">
+
+var dataset = {  
+   "metadata":[  
+      {  
+         "colName":"REPORT",
+         "colType":"String",
+         "colIndex":0
+      },
+      {  
+         "colName":"PARAMETER",
+         "colType":"String",
+         "colIndex":1
+      },
+      {  
+         "colName":"PARAMETER_LABEL",
+         "colType":"String",
+         "colIndex":2
+      }
+   ],
+   "resultset":[  
+      [  
+         "Cases",
+         "pSelectStyle",
+         "Select Style"
+      ],
+      [  
+         "Cases",
+         "pCaseTypeFilter",
+         "Select Case Type"
+      ],
+      [  
+         "Cases",
+         "pCaseCreatedDateFilter",
+         "Select Case Created Period"
+      ]
+   ],
+   "queryInfo":{  
+      "totalRows":"3"
+   }
+}
+
+
+
+/*
+var render_grid = {
+	type: "cccHeatGridChart",
+	name: "render_grid",
+	chartDefinition: {
+		width: 400,
+		height: 400,
+        dataOptions: {measuresInColumns: false},
+		crosstabMode: true,
+		seriesInRows: false,
+		animate: false,
+		clickable: false,
+		timeSeries: false,
+		timeSeriesFormat: "%Y-%m-%d",
+		panelSizeRatio: 0.8,
+		orientation: "vertical",
+		colors: [],
+		valuesVisible: false,
+		valuesAnchor: "right",
+		titlePosition: "top",
+		titleSize: 25,
+		baseAxisPosition: "bottom",
+		baseAxisSize: 30,
+		orthoAxisPosition: "left",
+		orthoAxisSize: 50,
+		axisGrid: false,
+		colorScaleType: "linear",
+		visualRoles: {
+			color: "value",
+			size: "value"
+		},
+		tooltip: false,
+		colorMissing: "#efc5ad",
+		extensionPoints: [],
+        valuesAnchor: "right",
+		colorNormByCategory: true,
+		useShapes: true,
+		colorMin: "#0EDFF1",
+		colorMax: "#0119F9",
+        isMultiValued: true,
+        axisComposite:true
+},
+	parameters: [],
+	executeAtStart: false,
+	htmlObject: "sampleObject",
+	listeners: []
+
+};
+
+*/
+
+Dashboards.preInit = function(){
+    
+    var dashComponents = []
+    
+    $.each(dataset.resultset, function(i,v){
+        
+        console.log(v);
+        
+        Dashboards.addParameter(v[1], "0");
+        Dashboards.setParameterViewMode(v[1], "unused");
+        
+        //dashComponents[i] = v[1]+"Comp";
+        
+        
+        Dashboards.addComponent({
+            type: "BSSelectBaseComponent",
+            name: "render_"+v[1]+"Comp",
+            priority: 5,
+            parameter: v[1],
+            executeAtStart: false,
+            listeners: [],
+            parameters: [],
+            valuesArray: [["SuiteCRM","SuiteCRM"]],
+            valueAsId: false,
+            buttonBlock: true,
+            buttonIcon: "none",
+            prependIcon: false,
+            buttonType: "btn-default",
+            buttonLiveSearch: false,
+            itemsSize: "false",
+            multipleSelectMode: false,
+            maxMultiSelect: 0,
+            multipleSelectTextFormat: false,
+            maxMultiSelectTextFormat: 0,
+            multiSelectTitle: "Nothing selected",
+            showTickIcon: false,
+            showMenuArrow: false,
+            queryDefinition:  {
+            
+            }
+        });
+        
+        /*
+        dashComponents[v[1]+"Comp"] = {
+            type: "BSSelectBaseComponent",
+            name: "render_"+v[1]+"Comp",
+            priority: 5,
+            parameter: v[1],
+            executeAtStart: false,
+            listeners: [],
+            parameters: [],
+            valuesArray: [["SuiteCRM","SuiteCRM"]],
+            valueAsId: false,
+            buttonBlock: true,
+            buttonIcon: "none",
+            prependIcon: false,
+            buttonType: "btn-default",
+            buttonLiveSearch: false,
+            itemsSize: "false",
+            multipleSelectMode: false,
+            maxMultiSelect: 0,
+            multipleSelectTextFormat: false,
+            maxMultiSelectTextFormat: 0,
+            multiSelectTitle: "Nothing selected",
+            showTickIcon: false,
+            showMenuArrow: false,
+            queryDefinition:  {
+            
+            }
+        };
+        */
+        
+        
+    });
+    
+    //Dashboards.addComponents([dashComponents]);
+    
+}
+
+Dashboards.postInit = function initDummyData() {
+	//render_grid.render(testHeatGrid);
+}
+
+
+
+Dashboards.init();
+
+   
+
+					
+</script>

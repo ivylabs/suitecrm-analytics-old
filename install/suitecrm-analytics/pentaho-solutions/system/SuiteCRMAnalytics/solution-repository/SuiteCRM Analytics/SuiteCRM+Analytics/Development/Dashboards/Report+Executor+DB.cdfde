@@ -1,0 +1,2484 @@
+{
+  "components" : {
+    "rows" : [
+      {
+        "id" : "PARAMETERS",
+        "name" : "Parameters",
+        "parent" : "UnIqEiD",
+        "properties" : [
+          {
+            "name" : "Group",
+            "type" : "Label",
+            "value" : "Parameters"
+          }
+        ],
+        "type" : "Label",
+        "typeDesc" : "\u003Ci\u003EGroup\u003C/i\u003E"
+      },
+      {
+        "id" : "405bd64b-d516-3a69-69de-1fdc508135f0",
+        "parent" : "PARAMETERS",
+        "properties" : [
+          {
+            "name" : "name",
+            "type" : "Id",
+            "value" : "PARAM_RUN_REPORT"
+          },
+          {
+            "name" : "propertyValue",
+            "type" : "String",
+            "value" : "0"
+          },
+          {
+            "name" : "parameterViewRole",
+            "type" : "parameterViewRoleCustom",
+            "value" : "unused"
+          },
+          {
+            "name" : "bookmarkable",
+            "type" : "Boolean",
+            "value" : "false"
+          },
+          {
+            "name" : "public",
+            "type" : "Boolean",
+            "value" : "false"
+          }
+        ],
+        "rowName" : "Simple Parameter",
+        "type" : "ComponentsParameter",
+        "typeDesc" : "Simple parameter"
+      },
+      {
+        "id" : "45f65bbd-e52f-5e44-4014-17cb40f4bf9c",
+        "parent" : "PARAMETERS",
+        "properties" : [
+          {
+            "name" : "name",
+            "type" : "Id",
+            "value" : "PARAM_REPORT"
+          },
+          {
+            "name" : "propertyValue",
+            "type" : "String",
+            "value" : ""
+          },
+          {
+            "name" : "parameterViewRole",
+            "type" : "parameterViewRoleCustom",
+            "value" : "unused"
+          },
+          {
+            "name" : "bookmarkable",
+            "type" : "Boolean",
+            "value" : "false"
+          },
+          {
+            "name" : "public",
+            "type" : "Boolean",
+            "value" : "false"
+          }
+        ],
+        "rowName" : "Simple Parameter",
+        "type" : "ComponentsParameter",
+        "typeDesc" : "Simple parameter"
+      },
+      {
+        "id" : "2a442293-6223-24bb-8905-48c7f619aa51",
+        "parent" : "PARAMETERS",
+        "properties" : [
+          {
+            "name" : "name",
+            "type" : "Id",
+            "value" : "PARAM_OPPORTUNITY_TYPE"
+          },
+          {
+            "name" : "propertyValue",
+            "type" : "String",
+            "value" : "All Opportunity Types"
+          },
+          {
+            "name" : "parameterViewRole",
+            "type" : "parameterViewRoleCustom",
+            "value" : "unused"
+          },
+          {
+            "name" : "bookmarkable",
+            "type" : "Boolean",
+            "value" : "false"
+          },
+          {
+            "name" : "public",
+            "type" : "Boolean",
+            "value" : "false"
+          }
+        ],
+        "rowName" : "Simple Parameter",
+        "type" : "ComponentsParameter",
+        "typeDesc" : "Simple parameter"
+      },
+      {
+        "id" : "7065261d-91b7-ad9d-2a3b-38d18d3dc353",
+        "parent" : "PARAMETERS",
+        "properties" : [
+          {
+            "name" : "name",
+            "type" : "Id",
+            "value" : "PARAM_OPPORTUNITY_CREATED_PERIOD"
+          },
+          {
+            "name" : "propertyValue",
+            "type" : "String",
+            "value" : "9999-99"
+          },
+          {
+            "name" : "parameterViewRole",
+            "type" : "parameterViewRoleCustom",
+            "value" : "unused"
+          },
+          {
+            "name" : "bookmarkable",
+            "type" : "Boolean",
+            "value" : "false"
+          },
+          {
+            "name" : "public",
+            "type" : "Boolean",
+            "value" : "false"
+          }
+        ],
+        "rowName" : "Simple Parameter",
+        "type" : "ComponentsParameter",
+        "typeDesc" : "Simple parameter"
+      },
+      {
+        "id" : "78cac3b0-7e5a-6d2f-67f8-c8591d8900b8",
+        "parent" : "PARAMETERS",
+        "properties" : [
+          {
+            "name" : "name",
+            "type" : "Id",
+            "value" : "PARAM_CASE_CREATED_PERIOD"
+          },
+          {
+            "name" : "propertyValue",
+            "type" : "String",
+            "value" : "9999-99"
+          },
+          {
+            "name" : "parameterViewRole",
+            "type" : "parameterViewRoleCustom",
+            "value" : "unused"
+          },
+          {
+            "name" : "bookmarkable",
+            "type" : "Boolean",
+            "value" : "false"
+          },
+          {
+            "name" : "public",
+            "type" : "Boolean",
+            "value" : "false"
+          }
+        ],
+        "rowName" : "Simple Parameter",
+        "type" : "ComponentsParameter",
+        "typeDesc" : "Simple parameter"
+      },
+      {
+        "id" : "0a1b7415-bd7b-6541-c0c5-4aeca3a1a6af",
+        "parent" : "PARAMETERS",
+        "properties" : [
+          {
+            "name" : "name",
+            "type" : "Id",
+            "value" : "PARAM_CAMPAIGN_TYPE"
+          },
+          {
+            "name" : "propertyValue",
+            "type" : "String",
+            "value" : "All Campaign Types"
+          },
+          {
+            "name" : "parameterViewRole",
+            "type" : "parameterViewRoleCustom",
+            "value" : "unused"
+          },
+          {
+            "name" : "bookmarkable",
+            "type" : "Boolean",
+            "value" : "false"
+          },
+          {
+            "name" : "public",
+            "type" : "Boolean",
+            "value" : "false"
+          }
+        ],
+        "rowName" : "Simple Parameter",
+        "type" : "ComponentsParameter",
+        "typeDesc" : "Simple parameter"
+      },
+      {
+        "id" : "677ab2a6-2da3-c281-c121-2392657df1e9",
+        "parent" : "PARAMETERS",
+        "properties" : [
+          {
+            "name" : "name",
+            "type" : "Id",
+            "value" : "PARAM_CASE_TYPE"
+          },
+          {
+            "name" : "propertyValue",
+            "type" : "String",
+            "value" : "All Case Types"
+          },
+          {
+            "name" : "parameterViewRole",
+            "type" : "parameterViewRoleCustom",
+            "value" : "unused"
+          },
+          {
+            "name" : "bookmarkable",
+            "type" : "Boolean",
+            "value" : "false"
+          },
+          {
+            "name" : "public",
+            "type" : "Boolean",
+            "value" : "false"
+          }
+        ],
+        "rowName" : "Simple Parameter",
+        "type" : "ComponentsParameter",
+        "typeDesc" : "Simple parameter"
+      },
+      {
+        "id" : "IVYISBOOTSTRAP",
+        "name" : "Ivy IS Bootstrap",
+        "parent" : "UnIqEiD",
+        "properties" : [
+          {
+            "name" : "Group",
+            "type" : "Label",
+            "value" : "Ivy IS Bootstrap"
+          }
+        ],
+        "type" : "Label",
+        "typeDesc" : "\u003Ci\u003EGroup\u003C/i\u003E"
+      },
+      {
+        "id" : "ca867938-2604-58f2-1f00-a50b5d88bb6d",
+        "parent" : "IVYISBOOTSTRAP",
+        "properties" : [
+          {
+            "name" : "name",
+            "type" : "Id",
+            "value" : "SELECT_REPORT"
+          },
+          {
+            "name" : "parameter",
+            "type" : "Parameter",
+            "value" : "${p:PARAM_REPORT}"
+          },
+          {
+            "name" : "listeners",
+            "type" : "Listeners",
+            "value" : "[]"
+          },
+          {
+            "name" : "parameters",
+            "type" : "ValuesArray",
+            "value" : "[]"
+          },
+          {
+            "name" : "valueAsId",
+            "type" : "Boolean",
+            "value" : "false"
+          },
+          {
+            "name" : "dataSource",
+            "type" : "Datasource",
+            "value" : "GET_REPORTS"
+          },
+          {
+            "name" : "valuesArray",
+            "type" : "ValuesArray",
+            "value" : "[]"
+          },
+          {
+            "name" : "priority",
+            "type" : "Integer",
+            "value" : 5
+          },
+          {
+            "name" : "refreshPeriod",
+            "type" : "Integer",
+            "value" : ""
+          },
+          {
+            "name" : "buttonLiveSearch",
+            "type" : "Boolean",
+            "value" : "false"
+          },
+          {
+            "name" : "buttonBlock",
+            "type" : "Boolean",
+            "value" : "true"
+          },
+          {
+            "name" : "itemsSize",
+            "type" : "String",
+            "value" : "false"
+          },
+          {
+            "name" : "buttonType",
+            "type" : "buttonTypeCustom",
+            "value" : "btn-default"
+          },
+          {
+            "name" : "buttonSize",
+            "type" : "buttonSizeCustom",
+            "value" : ""
+          },
+          {
+            "name" : "prependIcon",
+            "type" : "Boolean",
+            "value" : "False"
+          },
+          {
+            "name" : "buttonIcon",
+            "type" : "buttonIconCustom",
+            "value" : "none"
+          },
+          {
+            "name" : "multipleSelectMode",
+            "type" : "Boolean",
+            "value" : "false"
+          },
+          {
+            "name" : "maxMultiSelect",
+            "type" : "Integer",
+            "value" : 0
+          },
+          {
+            "name" : "multipleSelectTextFormat",
+            "type" : "Boolean",
+            "value" : "false"
+          },
+          {
+            "name" : "maxMultiSelectTextFormat",
+            "type" : "Integer",
+            "value" : 0
+          },
+          {
+            "name" : "multiSelectTitle",
+            "type" : "String",
+            "value" : "Select a Report"
+          },
+          {
+            "name" : "showTickIcon",
+            "type" : "Boolean",
+            "value" : "false"
+          },
+          {
+            "name" : "showMenuArrow",
+            "type" : "Boolean",
+            "value" : "false"
+          },
+          {
+            "name" : "htmlObject",
+            "type" : "HtmlObject",
+            "value" : "${h:selectReportAnchor}"
+          },
+          {
+            "name" : "executeAtStart",
+            "type" : "Boolean",
+            "value" : "true"
+          },
+          {
+            "name" : "preExecution",
+            "type" : "JavaScript",
+            "value" : ""
+          },
+          {
+            "name" : "postExecution",
+            "type" : "JavaScript",
+            "value" : ""
+          },
+          {
+            "name" : "postFetch",
+            "type" : "JavaScript",
+            "value" : ""
+          },
+          {
+            "name" : "preChange",
+            "type" : "JavaScript",
+            "value" : ""
+          },
+          {
+            "name" : "postChange",
+            "type" : "JavaScript",
+            "value" : ""
+          }
+        ],
+        "rowName" : "Bootstrap Select",
+        "type" : "ComponentsBSSelectBaseComponent",
+        "typeDesc" : "Bootstrap Select"
+      },
+      {
+        "id" : "789f05bd-5ed2-2cbf-4d28-72704dd25f86",
+        "parent" : "IVYISBOOTSTRAP",
+        "properties" : [
+          {
+            "name" : "name",
+            "type" : "Id",
+            "value" : "BUTTON_EXECUTE_REPORT"
+          },
+          {
+            "name" : "label",
+            "type" : "String",
+            "value" : "Run Report"
+          },
+          {
+            "name" : "listeners",
+            "type" : "Listeners",
+            "value" : "[]"
+          },
+          {
+            "name" : "expression",
+            "type" : "JavaScript",
+            "value" : "function d(){\n    Dashboards.fireChange(\u0027PARAM_RUN_REPORT\u0027,1);    \n} "
+          },
+          {
+            "name" : "priority",
+            "type" : "Integer",
+            "value" : 5
+          },
+          {
+            "name" : "refreshPeriod",
+            "type" : "Integer",
+            "value" : ""
+          },
+          {
+            "name" : "buttonType",
+            "type" : "buttonTypeCustom",
+            "value" : "btn-primary"
+          },
+          {
+            "name" : "buttonBlock",
+            "type" : "Boolean",
+            "value" : "true"
+          },
+          {
+            "name" : "buttonSize",
+            "type" : "buttonSizeCustom",
+            "value" : ""
+          },
+          {
+            "name" : "prependIcon",
+            "type" : "Boolean",
+            "value" : "False"
+          },
+          {
+            "name" : "buttonIcon",
+            "type" : "buttonIconCustom",
+            "value" : "none"
+          },
+          {
+            "name" : "buttonDisabled",
+            "type" : "Boolean",
+            "value" : "false"
+          },
+          {
+            "name" : "htmlObject",
+            "type" : "HtmlObject",
+            "value" : "${h:buttonExecuteReportAnchor}"
+          },
+          {
+            "name" : "executeAtStart",
+            "type" : "Boolean",
+            "value" : "true"
+          },
+          {
+            "name" : "preExecution",
+            "type" : "JavaScript",
+            "value" : ""
+          },
+          {
+            "name" : "postExecution",
+            "type" : "JavaScript",
+            "value" : ""
+          }
+        ],
+        "rowName" : "Bootstrap Button",
+        "type" : "ComponentsBSButtonComponent",
+        "typeDesc" : "Bootstrap Button"
+      },
+      {
+        "id" : "35875e7d-b915-de2d-b9c1-b585b6423957",
+        "parent" : "IVYISBOOTSTRAP",
+        "properties" : [
+          {
+            "name" : "name",
+            "type" : "Id",
+            "value" : "pSelectStyle"
+          },
+          {
+            "name" : "parameter",
+            "type" : "Parameter",
+            "value" : "PARAM_STYLE"
+          },
+          {
+            "name" : "listeners",
+            "type" : "Listeners",
+            "value" : "[]"
+          },
+          {
+            "name" : "parameters",
+            "type" : "ValuesArray",
+            "value" : "[]"
+          },
+          {
+            "name" : "valueAsId",
+            "type" : "Boolean",
+            "value" : "false"
+          },
+          {
+            "name" : "dataSource",
+            "type" : "Datasource",
+            "value" : ""
+          },
+          {
+            "name" : "valuesArray",
+            "type" : "ValuesArray",
+            "value" : "[[\u0022SuiteCRM\u0022,\u0022SuiteCRM\u0022]]"
+          },
+          {
+            "name" : "priority",
+            "type" : "Integer",
+            "value" : 5
+          },
+          {
+            "name" : "refreshPeriod",
+            "type" : "Integer",
+            "value" : ""
+          },
+          {
+            "name" : "buttonLiveSearch",
+            "type" : "Boolean",
+            "value" : "false"
+          },
+          {
+            "name" : "buttonBlock",
+            "type" : "Boolean",
+            "value" : "true"
+          },
+          {
+            "name" : "itemsSize",
+            "type" : "String",
+            "value" : "false"
+          },
+          {
+            "name" : "buttonType",
+            "type" : "buttonTypeCustom",
+            "value" : "btn-default"
+          },
+          {
+            "name" : "buttonSize",
+            "type" : "buttonSizeCustom",
+            "value" : ""
+          },
+          {
+            "name" : "prependIcon",
+            "type" : "Boolean",
+            "value" : "False"
+          },
+          {
+            "name" : "buttonIcon",
+            "type" : "buttonIconCustom",
+            "value" : "none"
+          },
+          {
+            "name" : "multipleSelectMode",
+            "type" : "Boolean",
+            "value" : "false"
+          },
+          {
+            "name" : "maxMultiSelect",
+            "type" : "Integer",
+            "value" : 0
+          },
+          {
+            "name" : "multipleSelectTextFormat",
+            "type" : "Boolean",
+            "value" : "false"
+          },
+          {
+            "name" : "maxMultiSelectTextFormat",
+            "type" : "Integer",
+            "value" : 0
+          },
+          {
+            "name" : "multiSelectTitle",
+            "type" : "String",
+            "value" : "Nothing selected"
+          },
+          {
+            "name" : "showTickIcon",
+            "type" : "Boolean",
+            "value" : "false"
+          },
+          {
+            "name" : "showMenuArrow",
+            "type" : "Boolean",
+            "value" : "false"
+          },
+          {
+            "name" : "htmlObject",
+            "type" : "HtmlObject",
+            "value" : ""
+          },
+          {
+            "name" : "executeAtStart",
+            "type" : "Boolean",
+            "value" : "false"
+          },
+          {
+            "name" : "preExecution",
+            "type" : "JavaScript",
+            "value" : ""
+          },
+          {
+            "name" : "postExecution",
+            "type" : "JavaScript",
+            "value" : ""
+          },
+          {
+            "name" : "postFetch",
+            "type" : "JavaScript",
+            "value" : ""
+          },
+          {
+            "name" : "preChange",
+            "type" : "JavaScript",
+            "value" : ""
+          },
+          {
+            "name" : "postChange",
+            "type" : "JavaScript",
+            "value" : ""
+          }
+        ],
+        "rowName" : "Bootstrap Select",
+        "type" : "ComponentsBSSelectBaseComponent",
+        "typeDesc" : "Bootstrap Select"
+      },
+      {
+        "id" : "6e6185c5-b68f-a4eb-4353-9933e5aa7b9d",
+        "parent" : "IVYISBOOTSTRAP",
+        "properties" : [
+          {
+            "name" : "name",
+            "type" : "Id",
+            "value" : "pOpportunityCreatedDateFilter"
+          },
+          {
+            "name" : "parameter",
+            "type" : "Parameter",
+            "value" : "PARAM_OPPORUNITY_CREATED_PERIOD"
+          },
+          {
+            "name" : "listeners",
+            "type" : "Listeners",
+            "value" : "[]"
+          },
+          {
+            "name" : "parameters",
+            "type" : "ValuesArray",
+            "value" : "[]"
+          },
+          {
+            "name" : "valueAsId",
+            "type" : "Boolean",
+            "value" : "false"
+          },
+          {
+            "name" : "dataSource",
+            "type" : "Datasource",
+            "value" : "GET_OPPORTUNITY_CREATED_MONTHLY_PERIODS_YYYY_MM"
+          },
+          {
+            "name" : "valuesArray",
+            "type" : "ValuesArray",
+            "value" : "[]"
+          },
+          {
+            "name" : "priority",
+            "type" : "Integer",
+            "value" : 5
+          },
+          {
+            "name" : "refreshPeriod",
+            "type" : "Integer",
+            "value" : ""
+          },
+          {
+            "name" : "buttonLiveSearch",
+            "type" : "Boolean",
+            "value" : "false"
+          },
+          {
+            "name" : "buttonBlock",
+            "type" : "Boolean",
+            "value" : "true"
+          },
+          {
+            "name" : "itemsSize",
+            "type" : "String",
+            "value" : "false"
+          },
+          {
+            "name" : "buttonType",
+            "type" : "buttonTypeCustom",
+            "value" : "btn-default"
+          },
+          {
+            "name" : "buttonSize",
+            "type" : "buttonSizeCustom",
+            "value" : ""
+          },
+          {
+            "name" : "prependIcon",
+            "type" : "Boolean",
+            "value" : "False"
+          },
+          {
+            "name" : "buttonIcon",
+            "type" : "buttonIconCustom",
+            "value" : "none"
+          },
+          {
+            "name" : "multipleSelectMode",
+            "type" : "Boolean",
+            "value" : "false"
+          },
+          {
+            "name" : "maxMultiSelect",
+            "type" : "Integer",
+            "value" : 0
+          },
+          {
+            "name" : "multipleSelectTextFormat",
+            "type" : "Boolean",
+            "value" : "false"
+          },
+          {
+            "name" : "maxMultiSelectTextFormat",
+            "type" : "Integer",
+            "value" : 0
+          },
+          {
+            "name" : "multiSelectTitle",
+            "type" : "String",
+            "value" : "Nothing selected"
+          },
+          {
+            "name" : "showTickIcon",
+            "type" : "Boolean",
+            "value" : "false"
+          },
+          {
+            "name" : "showMenuArrow",
+            "type" : "Boolean",
+            "value" : "false"
+          },
+          {
+            "name" : "htmlObject",
+            "type" : "HtmlObject",
+            "value" : ""
+          },
+          {
+            "name" : "executeAtStart",
+            "type" : "Boolean",
+            "value" : "false"
+          },
+          {
+            "name" : "preExecution",
+            "type" : "JavaScript",
+            "value" : ""
+          },
+          {
+            "name" : "postExecution",
+            "type" : "JavaScript",
+            "value" : ""
+          },
+          {
+            "name" : "postFetch",
+            "type" : "JavaScript",
+            "value" : ""
+          },
+          {
+            "name" : "preChange",
+            "type" : "JavaScript",
+            "value" : ""
+          },
+          {
+            "name" : "postChange",
+            "type" : "JavaScript",
+            "value" : ""
+          }
+        ],
+        "rowName" : "Bootstrap Select",
+        "type" : "ComponentsBSSelectBaseComponent",
+        "typeDesc" : "Bootstrap Select"
+      },
+      {
+        "id" : "3f8fd720-a0ee-566c-429b-59cd57c13d4f",
+        "parent" : "IVYISBOOTSTRAP",
+        "properties" : [
+          {
+            "name" : "name",
+            "type" : "Id",
+            "value" : "pCaseCreatedDateFilter"
+          },
+          {
+            "name" : "parameter",
+            "type" : "Parameter",
+            "value" : "${p:PARAM_CASE_CREATED_PERIOD}"
+          },
+          {
+            "name" : "listeners",
+            "type" : "Listeners",
+            "value" : "[]"
+          },
+          {
+            "name" : "parameters",
+            "type" : "ValuesArray",
+            "value" : "[]"
+          },
+          {
+            "name" : "valueAsId",
+            "type" : "Boolean",
+            "value" : "false"
+          },
+          {
+            "name" : "dataSource",
+            "type" : "Datasource",
+            "value" : "GET_CASE_CREATED_MONTHLY_PERIODS_YYYY_MM"
+          },
+          {
+            "name" : "valuesArray",
+            "type" : "ValuesArray",
+            "value" : "[]"
+          },
+          {
+            "name" : "priority",
+            "type" : "Integer",
+            "value" : 5
+          },
+          {
+            "name" : "refreshPeriod",
+            "type" : "Integer",
+            "value" : ""
+          },
+          {
+            "name" : "buttonLiveSearch",
+            "type" : "Boolean",
+            "value" : "false"
+          },
+          {
+            "name" : "buttonBlock",
+            "type" : "Boolean",
+            "value" : "true"
+          },
+          {
+            "name" : "itemsSize",
+            "type" : "String",
+            "value" : "false"
+          },
+          {
+            "name" : "buttonType",
+            "type" : "buttonTypeCustom",
+            "value" : "btn-default"
+          },
+          {
+            "name" : "buttonSize",
+            "type" : "buttonSizeCustom",
+            "value" : ""
+          },
+          {
+            "name" : "prependIcon",
+            "type" : "Boolean",
+            "value" : "False"
+          },
+          {
+            "name" : "buttonIcon",
+            "type" : "buttonIconCustom",
+            "value" : "none"
+          },
+          {
+            "name" : "multipleSelectMode",
+            "type" : "Boolean",
+            "value" : "false"
+          },
+          {
+            "name" : "maxMultiSelect",
+            "type" : "Integer",
+            "value" : 0
+          },
+          {
+            "name" : "multipleSelectTextFormat",
+            "type" : "Boolean",
+            "value" : "false"
+          },
+          {
+            "name" : "maxMultiSelectTextFormat",
+            "type" : "Integer",
+            "value" : 0
+          },
+          {
+            "name" : "multiSelectTitle",
+            "type" : "String",
+            "value" : "Nothing selected"
+          },
+          {
+            "name" : "showTickIcon",
+            "type" : "Boolean",
+            "value" : "false"
+          },
+          {
+            "name" : "showMenuArrow",
+            "type" : "Boolean",
+            "value" : "false"
+          },
+          {
+            "name" : "htmlObject",
+            "type" : "HtmlObject",
+            "value" : ""
+          },
+          {
+            "name" : "executeAtStart",
+            "type" : "Boolean",
+            "value" : "false"
+          },
+          {
+            "name" : "preExecution",
+            "type" : "JavaScript",
+            "value" : ""
+          },
+          {
+            "name" : "postExecution",
+            "type" : "JavaScript",
+            "value" : ""
+          },
+          {
+            "name" : "postFetch",
+            "type" : "JavaScript",
+            "value" : ""
+          },
+          {
+            "name" : "preChange",
+            "type" : "JavaScript",
+            "value" : ""
+          },
+          {
+            "name" : "postChange",
+            "type" : "JavaScript",
+            "value" : ""
+          }
+        ],
+        "rowName" : "Bootstrap Select",
+        "type" : "ComponentsBSSelectBaseComponent",
+        "typeDesc" : "Bootstrap Select"
+      },
+      {
+        "id" : "45e5e569-92f6-2076-eef6-2fbd331203df",
+        "parent" : "IVYISBOOTSTRAP",
+        "properties" : [
+          {
+            "name" : "name",
+            "type" : "Id",
+            "value" : "pCampaignTypeFilter"
+          },
+          {
+            "name" : "parameter",
+            "type" : "Parameter",
+            "value" : "PARAM_CAMPAIGN_TYPE"
+          },
+          {
+            "name" : "listeners",
+            "type" : "Listeners",
+            "value" : "[]"
+          },
+          {
+            "name" : "parameters",
+            "type" : "ValuesArray",
+            "value" : "[]"
+          },
+          {
+            "name" : "valueAsId",
+            "type" : "Boolean",
+            "value" : "false"
+          },
+          {
+            "name" : "dataSource",
+            "type" : "Datasource",
+            "value" : "GET_CAMPAIGN_TYPES"
+          },
+          {
+            "name" : "valuesArray",
+            "type" : "ValuesArray",
+            "value" : "[]"
+          },
+          {
+            "name" : "priority",
+            "type" : "Integer",
+            "value" : 5
+          },
+          {
+            "name" : "refreshPeriod",
+            "type" : "Integer",
+            "value" : ""
+          },
+          {
+            "name" : "buttonLiveSearch",
+            "type" : "Boolean",
+            "value" : "false"
+          },
+          {
+            "name" : "buttonBlock",
+            "type" : "Boolean",
+            "value" : "true"
+          },
+          {
+            "name" : "itemsSize",
+            "type" : "String",
+            "value" : "false"
+          },
+          {
+            "name" : "buttonType",
+            "type" : "buttonTypeCustom",
+            "value" : "btn-default"
+          },
+          {
+            "name" : "buttonSize",
+            "type" : "buttonSizeCustom",
+            "value" : ""
+          },
+          {
+            "name" : "prependIcon",
+            "type" : "Boolean",
+            "value" : "False"
+          },
+          {
+            "name" : "buttonIcon",
+            "type" : "buttonIconCustom",
+            "value" : "none"
+          },
+          {
+            "name" : "multipleSelectMode",
+            "type" : "Boolean",
+            "value" : "false"
+          },
+          {
+            "name" : "maxMultiSelect",
+            "type" : "Integer",
+            "value" : 0
+          },
+          {
+            "name" : "multipleSelectTextFormat",
+            "type" : "Boolean",
+            "value" : "false"
+          },
+          {
+            "name" : "maxMultiSelectTextFormat",
+            "type" : "Integer",
+            "value" : 0
+          },
+          {
+            "name" : "multiSelectTitle",
+            "type" : "String",
+            "value" : "Nothing selected"
+          },
+          {
+            "name" : "showTickIcon",
+            "type" : "Boolean",
+            "value" : "false"
+          },
+          {
+            "name" : "showMenuArrow",
+            "type" : "Boolean",
+            "value" : "false"
+          },
+          {
+            "name" : "htmlObject",
+            "type" : "HtmlObject",
+            "value" : ""
+          },
+          {
+            "name" : "executeAtStart",
+            "type" : "Boolean",
+            "value" : "false"
+          },
+          {
+            "name" : "preExecution",
+            "type" : "JavaScript",
+            "value" : ""
+          },
+          {
+            "name" : "postExecution",
+            "type" : "JavaScript",
+            "value" : ""
+          },
+          {
+            "name" : "postFetch",
+            "type" : "JavaScript",
+            "value" : ""
+          },
+          {
+            "name" : "preChange",
+            "type" : "JavaScript",
+            "value" : ""
+          },
+          {
+            "name" : "postChange",
+            "type" : "JavaScript",
+            "value" : ""
+          }
+        ],
+        "rowName" : "Bootstrap Select",
+        "type" : "ComponentsBSSelectBaseComponent",
+        "typeDesc" : "Bootstrap Select"
+      },
+      {
+        "id" : "f10162b3-5cc6-c53b-03ee-9d24916dfb9f",
+        "parent" : "IVYISBOOTSTRAP",
+        "properties" : [
+          {
+            "name" : "name",
+            "type" : "Id",
+            "value" : "pOpportunityTypeFilter"
+          },
+          {
+            "name" : "parameter",
+            "type" : "Parameter",
+            "value" : "${p:PARAM_OPPORTUNITY_TYPE}"
+          },
+          {
+            "name" : "listeners",
+            "type" : "Listeners",
+            "value" : "[]"
+          },
+          {
+            "name" : "parameters",
+            "type" : "ValuesArray",
+            "value" : "[]"
+          },
+          {
+            "name" : "valueAsId",
+            "type" : "Boolean",
+            "value" : "false"
+          },
+          {
+            "name" : "dataSource",
+            "type" : "Datasource",
+            "value" : "GET_OPPORTUNITY_TYPES"
+          },
+          {
+            "name" : "valuesArray",
+            "type" : "ValuesArray",
+            "value" : "[]"
+          },
+          {
+            "name" : "priority",
+            "type" : "Integer",
+            "value" : 5
+          },
+          {
+            "name" : "refreshPeriod",
+            "type" : "Integer",
+            "value" : ""
+          },
+          {
+            "name" : "buttonLiveSearch",
+            "type" : "Boolean",
+            "value" : "false"
+          },
+          {
+            "name" : "buttonBlock",
+            "type" : "Boolean",
+            "value" : "true"
+          },
+          {
+            "name" : "itemsSize",
+            "type" : "String",
+            "value" : "false"
+          },
+          {
+            "name" : "buttonType",
+            "type" : "buttonTypeCustom",
+            "value" : "btn-default"
+          },
+          {
+            "name" : "buttonSize",
+            "type" : "buttonSizeCustom",
+            "value" : ""
+          },
+          {
+            "name" : "prependIcon",
+            "type" : "Boolean",
+            "value" : "False"
+          },
+          {
+            "name" : "buttonIcon",
+            "type" : "buttonIconCustom",
+            "value" : "none"
+          },
+          {
+            "name" : "multipleSelectMode",
+            "type" : "Boolean",
+            "value" : "false"
+          },
+          {
+            "name" : "maxMultiSelect",
+            "type" : "Integer",
+            "value" : 0
+          },
+          {
+            "name" : "multipleSelectTextFormat",
+            "type" : "Boolean",
+            "value" : "false"
+          },
+          {
+            "name" : "maxMultiSelectTextFormat",
+            "type" : "Integer",
+            "value" : 0
+          },
+          {
+            "name" : "multiSelectTitle",
+            "type" : "String",
+            "value" : "Nothing selected"
+          },
+          {
+            "name" : "showTickIcon",
+            "type" : "Boolean",
+            "value" : "false"
+          },
+          {
+            "name" : "showMenuArrow",
+            "type" : "Boolean",
+            "value" : "false"
+          },
+          {
+            "name" : "htmlObject",
+            "type" : "HtmlObject",
+            "value" : ""
+          },
+          {
+            "name" : "executeAtStart",
+            "type" : "Boolean",
+            "value" : "false"
+          },
+          {
+            "name" : "preExecution",
+            "type" : "JavaScript",
+            "value" : ""
+          },
+          {
+            "name" : "postExecution",
+            "type" : "JavaScript",
+            "value" : ""
+          },
+          {
+            "name" : "postFetch",
+            "type" : "JavaScript",
+            "value" : ""
+          },
+          {
+            "name" : "preChange",
+            "type" : "JavaScript",
+            "value" : ""
+          },
+          {
+            "name" : "postChange",
+            "type" : "JavaScript",
+            "value" : ""
+          }
+        ],
+        "rowName" : "Bootstrap Select",
+        "type" : "ComponentsBSSelectBaseComponent",
+        "typeDesc" : "Bootstrap Select"
+      },
+      {
+        "id" : "8a11f85b-4c3e-ee32-a35f-f9a32945d9cb",
+        "parent" : "IVYISBOOTSTRAP",
+        "properties" : [
+          {
+            "name" : "name",
+            "type" : "Id",
+            "value" : "pCaseTypeFilter"
+          },
+          {
+            "name" : "parameter",
+            "type" : "Parameter",
+            "value" : "${p:PARAM_CASE_TYPE}"
+          },
+          {
+            "name" : "listeners",
+            "type" : "Listeners",
+            "value" : "[]"
+          },
+          {
+            "name" : "parameters",
+            "type" : "ValuesArray",
+            "value" : "[]"
+          },
+          {
+            "name" : "valueAsId",
+            "type" : "Boolean",
+            "value" : "false"
+          },
+          {
+            "name" : "dataSource",
+            "type" : "Datasource",
+            "value" : "GET_CASE_TYPES"
+          },
+          {
+            "name" : "valuesArray",
+            "type" : "ValuesArray",
+            "value" : "[]"
+          },
+          {
+            "name" : "priority",
+            "type" : "Integer",
+            "value" : 5
+          },
+          {
+            "name" : "refreshPeriod",
+            "type" : "Integer",
+            "value" : ""
+          },
+          {
+            "name" : "buttonLiveSearch",
+            "type" : "Boolean",
+            "value" : "false"
+          },
+          {
+            "name" : "buttonBlock",
+            "type" : "Boolean",
+            "value" : "true"
+          },
+          {
+            "name" : "itemsSize",
+            "type" : "String",
+            "value" : "false"
+          },
+          {
+            "name" : "buttonType",
+            "type" : "buttonTypeCustom",
+            "value" : "btn-default"
+          },
+          {
+            "name" : "buttonSize",
+            "type" : "buttonSizeCustom",
+            "value" : ""
+          },
+          {
+            "name" : "prependIcon",
+            "type" : "Boolean",
+            "value" : "False"
+          },
+          {
+            "name" : "buttonIcon",
+            "type" : "buttonIconCustom",
+            "value" : "none"
+          },
+          {
+            "name" : "multipleSelectMode",
+            "type" : "Boolean",
+            "value" : "false"
+          },
+          {
+            "name" : "maxMultiSelect",
+            "type" : "Integer",
+            "value" : 0
+          },
+          {
+            "name" : "multipleSelectTextFormat",
+            "type" : "Boolean",
+            "value" : "false"
+          },
+          {
+            "name" : "maxMultiSelectTextFormat",
+            "type" : "Integer",
+            "value" : 0
+          },
+          {
+            "name" : "multiSelectTitle",
+            "type" : "String",
+            "value" : "Nothing selected"
+          },
+          {
+            "name" : "showTickIcon",
+            "type" : "Boolean",
+            "value" : "false"
+          },
+          {
+            "name" : "showMenuArrow",
+            "type" : "Boolean",
+            "value" : "false"
+          },
+          {
+            "name" : "htmlObject",
+            "type" : "HtmlObject",
+            "value" : ""
+          },
+          {
+            "name" : "executeAtStart",
+            "type" : "Boolean",
+            "value" : "false"
+          },
+          {
+            "name" : "preExecution",
+            "type" : "JavaScript",
+            "value" : ""
+          },
+          {
+            "name" : "postExecution",
+            "type" : "JavaScript",
+            "value" : ""
+          },
+          {
+            "name" : "postFetch",
+            "type" : "JavaScript",
+            "value" : ""
+          },
+          {
+            "name" : "preChange",
+            "type" : "JavaScript",
+            "value" : ""
+          },
+          {
+            "name" : "postChange",
+            "type" : "JavaScript",
+            "value" : ""
+          }
+        ],
+        "rowName" : "Bootstrap Select",
+        "type" : "ComponentsBSSelectBaseComponent",
+        "typeDesc" : "Bootstrap Select"
+      },
+      {
+        "id" : "OTHERCOMPONENTS",
+        "name" : "Others",
+        "parent" : "UnIqEiD",
+        "properties" : [
+          {
+            "name" : "Group",
+            "type" : "Label",
+            "value" : "Others"
+          }
+        ],
+        "type" : "Label",
+        "typeDesc" : "\u003Ci\u003EGroup\u003C/i\u003E"
+      },
+      {
+        "id" : "00ff9256-a99b-fe71-0c97-e1b29e08ba45",
+        "parent" : "OTHERCOMPONENTS",
+        "properties" : [
+          {
+            "name" : "name",
+            "type" : "Id",
+            "value" : "REPORT"
+          },
+          {
+            "name" : "listeners",
+            "type" : "Listeners",
+            "value" : "[\u0022${p:PARAM_RUN_REPORT}\u0022]"
+          },
+          {
+            "name" : "solution",
+            "type" : "String",
+            "value" : ""
+          },
+          {
+            "name" : "path",
+            "type" : "String",
+            "value" : "/public/SuiteCRM Analytics/Development/Dashboards/Opportunities.prpt"
+          },
+          {
+            "name" : "action",
+            "type" : "String",
+            "value" : ""
+          },
+          {
+            "name" : "iframe",
+            "type" : "Boolean",
+            "value" : "false"
+          },
+          {
+            "name" : "parameters",
+            "type" : "ValuesArray",
+            "value" : "[[\u0022pOpportunityTypeFilter\u0022,\u0022PARAM_OPPORTUNITY_TYPE\u0022],[\u0022pCaseCreatedDateFilter\u0022,\u0022PARAM_CASE_CREATED_PERIOD\u0022],[\u0022pCaseTypeFilter\u0022,\u0022PARAM_CASE_TYPE\u0022],[\u0022pOpportunityCreatedDateFilter\u0022,\u0022PARAM_OPPORTUNITY_CREATED_PERIOD\u0022]]"
+          },
+          {
+            "name" : "paginate",
+            "type" : "Boolean",
+            "value" : "false"
+          },
+          {
+            "name" : "showParameters",
+            "type" : "Boolean",
+            "value" : "false"
+          },
+          {
+            "name" : "priority",
+            "type" : "Integer",
+            "value" : 5
+          },
+          {
+            "name" : "refreshPeriod",
+            "type" : "Integer",
+            "value" : ""
+          },
+          {
+            "name" : "htmlObject",
+            "type" : "HtmlObject",
+            "value" : "${h:reportAnchor}"
+          },
+          {
+            "name" : "executeAtStart",
+            "type" : "Boolean",
+            "value" : "false"
+          },
+          {
+            "name" : "usePost",
+            "type" : "Boolean",
+            "value" : "false"
+          },
+          {
+            "name" : "preExecution",
+            "type" : "JavaScript",
+            "value" : ""
+          },
+          {
+            "name" : "postExecution",
+            "type" : "JavaScript",
+            "value" : ""
+          },
+          {
+            "name" : "preChange",
+            "type" : "JavaScript",
+            "value" : ""
+          },
+          {
+            "name" : "postChange",
+            "type" : "JavaScript",
+            "value" : ""
+          },
+          {
+            "name" : "tooltip",
+            "type" : "Html",
+            "value" : ""
+          }
+        ],
+        "rowName" : "PRPT Component",
+        "type" : "Componentsprpt",
+        "typeDesc" : "PRPT Component"
+      },
+      {
+        "id" : "STANDARDCOMPONENTS",
+        "name" : "Standard",
+        "type" : "Label",
+        "typeDesc" : "\u003Ci\u003EGroup\u003C/i\u003E",
+        "parent" : "UnIqEiD",
+        "properties" : [
+          {
+            "name" : "Group",
+            "value" : "Standard",
+            "type" : "Label"
+          }
+        ]
+      },
+      {
+        "id" : "44d85b61-ba4d-7857-6579-4c7aedee7d44",
+        "type" : "ComponentsQuery",
+        "typeDesc" : "Query Component",
+        "parent" : "STANDARDCOMPONENTS",
+        "properties" : [
+          {
+            "name" : "name",
+            "value" : "QC_GET_REPOR_PARAMETER_MAPPING",
+            "type" : "Id"
+          },
+          {
+            "name" : "listeners",
+            "value" : "[\u0022${p:PARAM_REPORT}\u0022]",
+            "type" : "Listeners"
+          },
+          {
+            "name" : "parameters",
+            "value" : "[[\u0022PARAM_REPORT\u0022,\u0022PARAM_REPORT\u0022]]",
+            "type" : "ValuesArray"
+          },
+          {
+            "name" : "resultvar",
+            "value" : "",
+            "type" : "Result"
+          },
+          {
+            "name" : "dataSource",
+            "value" : "GET_REPORT_PARAMETER_MAPPING",
+            "type" : "Datasource"
+          },
+          {
+            "name" : "asynchronousMode",
+            "value" : "true",
+            "type" : "Boolean"
+          },
+          {
+            "name" : "priority",
+            "value" : 5,
+            "type" : "Integer"
+          },
+          {
+            "name" : "refreshPeriod",
+            "value" : "",
+            "type" : "Integer"
+          },
+          {
+            "name" : "htmlObject",
+            "value" : "",
+            "type" : "HtmlObject"
+          },
+          {
+            "name" : "executeAtStart",
+            "value" : "false",
+            "type" : "Boolean"
+          },
+          {
+            "name" : "preExecution",
+            "value" : "",
+            "type" : "JavaScript"
+          },
+          {
+            "name" : "postExecution",
+            "value" : "",
+            "type" : "JavaScript"
+          },
+          {
+            "name" : "postFetch",
+            "value" : "function d(data){\n    \n    \n    $(\u0027#parametersBox\u0027).show();\n    \n    console.log(data.resultset);\n    \n    var filterLength = data.resultset.length;\n    var parametersHTML = \u0022\u0022;\n    \n    renderedFilters = ( typeof renderedFilters != \u0027undefined\u0027 \u0026\u0026 renderedFilters instanceof Array ) ? renderedFilters : [];  \n    \n    if(renderedFilters.length !== 0){\n        \n        console.log(\u0022Components already rendered\u0022);\n        \n        for (i = 0; i \u003C renderedFilters.length; i++) {\n            \n            console.log(renderedFilters[i]);\n        \n            Dashboards.getComponentByName(\u0027render_\u0027+renderedFilters[i]).htmlObject = \u0027dummy\u0027+i;\n        \n        }\n    }\n    \n    renderedFilters = [];\n    \n    $(\u0027#parameters\u0027).empty();\n    \n    $.each(data.resultset,function(i,v){\n        \n        console.log(v);\n        \n        parametersHTML += \u0027\u003Cdiv class=\u0022row\u0022\u003E\u0027+\n                            \u0027\u003Cdiv class=\u0022col-md-12\u0022\u003E\u0027+\n                            \u0027\u003Clabel\u003E\u0027+v[2]+\u0027\u003C/label\u003E\u0027+\n                            \u0027\u003Cdiv id=\u0022parameterAnchor\u0027+i+\u0027\u0022\u003E\u003C/div\u003E\u0027+\n                            \u0027\u003C/div\u003E\u0027+\n                            \u0027\u003C/div\u003E\u0027;\n        \n        renderedFilters.push(v[1]);\n        \n        Dashboards.getComponentByName(\u0027render_\u0027+v[1]).htmlObject = \u0027parameterAnchor\u0027+i;\n        \n    });\n    \n    console.log(\u0022Rendered Filters\u0022);\n    \n    console.log(renderedFilters);\n    \n    /*\n    for (i = 0; i \u003C mapping[report].length; i++) { \n        parametersHTML += \u0027\u003Cdiv class=\u0022row\u0022\u003E\u0027+\n                            \u0027\u003Cdiv class=\u0022col-md-12\u0022\u003E\u0027+\n                            \u0027\u003Clabel\u003E\u0027+mapping[report][i][0]+\u0027\u003C/label\u003E\u0027+\n                            \u0027\u003Cdiv id=\u0022parameterAnchor\u0027+i+\u0027\u0022\u003E\u003C/div\u003E\u0027+\n                            \u0027\u003C/div\u003E\u0027+\n                            \u0027\u003C/div\u003E\u0027;\n        \n        renderedFilters.push(mapping[report][i][1]);\n        \n        \n        Dashboards.getComponentByName(\u0027render_\u0027+mapping[report][i][1]).htmlObject = \u0027parameterAnchor\u0027+i;\n    \n    }\n    \n    */\n    \n    $(\u0027#parameters\u0027).append(parametersHTML);\n    $(\u0027#parameters\u0027).append(\u0027\u003Cdiv class=\u0022row\u0022\u003E\u003Cdiv class=\u0022col-md-12\u0022\u003E\u003Clabel\u003E\u003C/label\u003E\u003Cdiv id=\u0022buttonExecuteReportAnchor\u0022\u003E\u003C/div\u003E\u003C/div\u003E\u003C/div\u003E\u0027);\n    \n    Dashboards.getComponentByName(\u0027render_REPORT\u0027).path = \u0027/public/SuiteCRM Analytics/Development/Dashboards/\u0027+data.resultset[0][0]+\u0027.prpt\u0027;\n    \n    Dashboards.updateAll(Dashboards.components);\n    \n    \n    \n    \n} ",
+            "type" : "JavaScript"
+          },
+          {
+            "name" : "preChange",
+            "value" : "",
+            "type" : "JavaScript"
+          },
+          {
+            "name" : "postChange",
+            "value" : "",
+            "type" : "JavaScript"
+          },
+          {
+            "name" : "tooltip",
+            "value" : "",
+            "type" : "Html"
+          }
+        ],
+        "rowName" : "Query Component"
+      }
+    ]
+  },
+  "datasources" : {
+    "rows" : [
+      {
+        "id" : "CDA",
+        "name" : "Community Data Access",
+        "parent" : "UnIqEiD",
+        "properties" : [
+          {
+            "name" : "Group",
+            "type" : "Label",
+            "value" : "Community Data Access"
+          }
+        ],
+        "type" : "Label",
+        "typeDesc" : "\u003Ci\u003EGroup\u003C/i\u003E"
+      },
+      {
+        "id" : "3a82d21c-d35b-26fd-31e1-1b518c4eac87",
+        "parent" : "CDA",
+        "properties" : [
+          {
+            "name" : "name",
+            "type" : "Id",
+            "value" : "GET_OPPORTUNITY_CREATED_MONTHLY_PERIODS_YYYY_MM"
+          },
+          {
+            "name" : "dataAccessId",
+            "type" : "String",
+            "value" : "GET_OPPORTUNITY_CREATED_MONTHLY_PERIODS_YYYY_MM"
+          },
+          {
+            "name" : "outputIndexId",
+            "type" : "String",
+            "value" : ""
+          },
+          {
+            "name" : "cdaPath",
+            "type" : "CdaPath",
+            "value" : "../../../SuiteCRM Analytics/System/Resources/CDA/FILTERS.cda"
+          }
+        ],
+        "rowName" : "CDA Datasource",
+        "type" : "DatasourcesCDA",
+        "typeDesc" : "CDA Data Source"
+      },
+      {
+        "id" : "5e34fd1c-4583-0033-ccba-d89f217d564d",
+        "parent" : "CDA",
+        "properties" : [
+          {
+            "name" : "name",
+            "type" : "Id",
+            "value" : "GET_CASE_CREATED_MONTHLY_PERIODS_YYYY_MM"
+          },
+          {
+            "name" : "dataAccessId",
+            "type" : "String",
+            "value" : "GET_CASE_CREATED_MONTHLY_PERIODS_YYYY_MM"
+          },
+          {
+            "name" : "outputIndexId",
+            "type" : "String",
+            "value" : ""
+          },
+          {
+            "name" : "cdaPath",
+            "type" : "CdaPath",
+            "value" : "../../../SuiteCRM Analytics/System/Resources/CDA/FILTERS.cda"
+          }
+        ],
+        "rowName" : "CDA Datasource",
+        "type" : "DatasourcesCDA",
+        "typeDesc" : "CDA Data Source"
+      },
+      {
+        "id" : "6147e709-7031-8791-e728-a3969d5e410e",
+        "parent" : "CDA",
+        "properties" : [
+          {
+            "name" : "name",
+            "type" : "Id",
+            "value" : "GET_LEAD_MONTHLY_PERIODS_YYYY_MM"
+          },
+          {
+            "name" : "dataAccessId",
+            "type" : "String",
+            "value" : "GET_LEAD_MONTHLY_PERIODS_YYYY_MM"
+          },
+          {
+            "name" : "outputIndexId",
+            "type" : "String",
+            "value" : ""
+          },
+          {
+            "name" : "cdaPath",
+            "type" : "CdaPath",
+            "value" : "../../../SuiteCRM Analytics/System/Resources/CDA/FILTERS.cda"
+          }
+        ],
+        "rowName" : "CDA Datasource",
+        "type" : "DatasourcesCDA",
+        "typeDesc" : "CDA Data Source"
+      },
+      {
+        "id" : "33d7789f-ab5e-bdf1-e350-e6c4eb002ac6",
+        "parent" : "CDA",
+        "properties" : [
+          {
+            "name" : "name",
+            "type" : "Id",
+            "value" : "GET_OPPORTUNITY_TYPES"
+          },
+          {
+            "name" : "dataAccessId",
+            "type" : "String",
+            "value" : "GET_OPPORTUNITY_TYPES"
+          },
+          {
+            "name" : "outputIndexId",
+            "type" : "String",
+            "value" : ""
+          },
+          {
+            "name" : "cdaPath",
+            "type" : "CdaPath",
+            "value" : "../../../SuiteCRM Analytics/System/Resources/CDA/FILTERS.cda"
+          }
+        ],
+        "rowName" : "CDA Datasource",
+        "type" : "DatasourcesCDA",
+        "typeDesc" : "CDA Data Source"
+      },
+      {
+        "id" : "465863a2-b17e-1ec7-2167-89a9d0019bbd",
+        "parent" : "CDA",
+        "properties" : [
+          {
+            "name" : "name",
+            "type" : "Id",
+            "value" : "GET_CAMPAIGN_TYPES"
+          },
+          {
+            "name" : "dataAccessId",
+            "type" : "String",
+            "value" : "GET_CAMPAIGN_TYPES"
+          },
+          {
+            "name" : "outputIndexId",
+            "type" : "String",
+            "value" : ""
+          },
+          {
+            "name" : "cdaPath",
+            "type" : "CdaPath",
+            "value" : "../../../SuiteCRM Analytics/System/Resources/CDA/FILTERS.cda"
+          }
+        ],
+        "rowName" : "CDA Datasource",
+        "type" : "DatasourcesCDA",
+        "typeDesc" : "CDA Data Source"
+      },
+      {
+        "id" : "3ff67976-67b2-bc5b-5c62-1caf65163761",
+        "parent" : "CDA",
+        "properties" : [
+          {
+            "name" : "name",
+            "type" : "Id",
+            "value" : "GET_CASE_TYPES"
+          },
+          {
+            "name" : "dataAccessId",
+            "type" : "String",
+            "value" : "GET_CASE_TYPES"
+          },
+          {
+            "name" : "outputIndexId",
+            "type" : "String",
+            "value" : ""
+          },
+          {
+            "name" : "cdaPath",
+            "type" : "CdaPath",
+            "value" : "../../../SuiteCRM Analytics/System/Resources/CDA/FILTERS.cda"
+          }
+        ],
+        "rowName" : "CDA Datasource",
+        "type" : "DatasourcesCDA",
+        "typeDesc" : "CDA Data Source"
+      },
+      {
+        "id" : "SQL",
+        "name" : "SQL Queries",
+        "type" : "Label",
+        "typeDesc" : "\u003Ci\u003EGroup\u003C/i\u003E",
+        "parent" : "UnIqEiD",
+        "properties" : [
+          {
+            "name" : "Group",
+            "value" : "SQL Queries",
+            "type" : "Label"
+          }
+        ]
+      },
+      {
+        "id" : "90616e0b-3bfc-1449-4e5c-1d47d0a9ad50",
+        "type" : "Componentssql_sqlJndi",
+        "typeDesc" : "sql over sqlJndi",
+        "parent" : "SQL",
+        "properties" : [
+          {
+            "name" : "name",
+            "value" : "GET_REPORTS",
+            "type" : "Id"
+          },
+          {
+            "name" : "access",
+            "value" : "public",
+            "type" : "Access"
+          },
+          {
+            "name" : "jndi",
+            "value" : "SuiteCRMAnalytics",
+            "type" : "Jndi"
+          },
+          {
+            "name" : "query",
+            "value" : "SELECT DISTINCT(REPORT)\nFROM REPORT_PARAMETER_MAPPING;",
+            "type" : "SqlQuery"
+          },
+          {
+            "name" : "parameters",
+            "value" : "[]",
+            "type" : "CdaParameters"
+          },
+          {
+            "name" : "cdacalculatedcolumns",
+            "value" : "[]",
+            "type" : "CdaCalculatedColumnsArray"
+          },
+          {
+            "name" : "cdacolumns",
+            "value" : "[]",
+            "type" : "CdaColumnsArray"
+          },
+          {
+            "name" : "output",
+            "value" : "[]",
+            "type" : "IndexArray"
+          },
+          {
+            "name" : "outputMode",
+            "value" : "include",
+            "type" : "OutputMode"
+          },
+          {
+            "name" : "cacheKeys",
+            "value" : "[]",
+            "type" : "CacheKeysValues"
+          },
+          {
+            "name" : "cacheDuration",
+            "value" : 3600,
+            "type" : "Integer"
+          },
+          {
+            "name" : "cache",
+            "value" : "true",
+            "type" : "Boolean"
+          }
+        ],
+        "meta" : "CDA",
+        "meta_conntype" : "sql.jndi",
+        "meta_datype" : "sql",
+        "rowName" : "sql over sqlJndi"
+      },
+      {
+        "id" : "9b77d977-d3ab-ecd9-aa7f-63cb756ba84b",
+        "type" : "Componentssql_sqlJndi",
+        "typeDesc" : "sql over sqlJndi",
+        "parent" : "SQL",
+        "properties" : [
+          {
+            "name" : "name",
+            "value" : "GET_REPORT_PARAMETER_MAPPING",
+            "type" : "Id"
+          },
+          {
+            "name" : "access",
+            "value" : "public",
+            "type" : "Access"
+          },
+          {
+            "name" : "jndi",
+            "value" : "SuiteCRMAnalytics",
+            "type" : "Jndi"
+          },
+          {
+            "name" : "query",
+            "value" : "SELECT *\nFROM REPORT_PARAMETER_MAPPING\nWHERE REPORT = ${PARAM_REPORT}",
+            "type" : "SqlQuery"
+          },
+          {
+            "name" : "parameters",
+            "value" : "[[\u0022PARAM_REPORT\u0022,\u0022PARAM_REPORT\u0022,\u0022String\u0022,\u0022\u0022,\u0022\u0022]]",
+            "type" : "CdaParameters"
+          },
+          {
+            "name" : "cdacalculatedcolumns",
+            "value" : "[]",
+            "type" : "CdaCalculatedColumnsArray"
+          },
+          {
+            "name" : "cdacolumns",
+            "value" : "[]",
+            "type" : "CdaColumnsArray"
+          },
+          {
+            "name" : "output",
+            "value" : "[]",
+            "type" : "IndexArray"
+          },
+          {
+            "name" : "outputMode",
+            "value" : "include",
+            "type" : "OutputMode"
+          },
+          {
+            "name" : "cacheKeys",
+            "value" : "[]",
+            "type" : "CacheKeysValues"
+          },
+          {
+            "name" : "cacheDuration",
+            "value" : 3600,
+            "type" : "Integer"
+          },
+          {
+            "name" : "cache",
+            "value" : "true",
+            "type" : "Boolean"
+          }
+        ],
+        "meta" : "CDA",
+        "meta_conntype" : "sql.jndi",
+        "meta_datype" : "sql",
+        "rowName" : "sql over sqlJndi"
+      }
+    ]
+  },
+  "filename" : "/public/SuiteCRM+Analytics/Development/Dashboards/Report+Executor+DB.cdfde",
+  "layout" : {
+    "rows" : [
+      {
+        "id" : "f1ec1705-be06-ef36-0035-74a63f472949",
+        "parent" : "UnIqEiD",
+        "properties" : [
+          {
+            "name" : "name",
+            "type" : "Id",
+            "value" : "css"
+          },
+          {
+            "name" : "resourceCode",
+            "type" : "Resource",
+            "value" : ".centreAlignReport {\n    margin:auto;    \n} \n\n.reportBorder {\n    border:1px solid #000;\n} "
+          },
+          {
+            "name" : "resourceType",
+            "type" : "Label",
+            "value" : "Css"
+          }
+        ],
+        "type" : "LayoutResourceCode",
+        "typeDesc" : "Resource"
+      },
+      {
+        "id" : "af7fd73b-c4ec-6ae4-9d84-6501297a2564",
+        "parent" : "UnIqEiD",
+        "properties" : [
+          {
+            "name" : "name",
+            "type" : "Id",
+            "value" : "mapping"
+          },
+          {
+            "name" : "resourceCode",
+            "type" : "Resource",
+            "value" : "var mapping = {}\nvar reports = {}\n\n\n    mapping.report1 = [[\u0027Selector One\u0027,\u0027SELECT_1\u0027],[\u0027Selector Two\u0027,\u0027SELECT_2\u0027],[\u0027Campaign Type\u0027,\u0027SELECT_CAMPAIGN_TYPE\u0027]];\n    mapping.report2 = [[\u0027Selector Three\u0027,\u0027SELECT_3\u0027],[\u0027Input One\u0027,\u0027INPUT_1\u0027]];\n    mapping.report3 = [[\u0027Selector One\u0027,\u0027SELECT_1\u0027],[\u0027Selector Two\u0027,\u0027SELECT_2\u0027],[\u0027Selector Three\u0027,\u0027SELECT_3\u0027],[\u0027Input One\u0027,\u0027INPUT_1\u0027]];\n    \n    mapping.report4 = [[\u0027Opportunity Type\u0027,\u0027SELECT_OPPORTUNITY_TYPE\u0027],[\u0027Date\u0027,\u0027SELECT_PERIOD\u0027]];\n    reports.report4 = [\u0027/public/SuiteCRM Analytics/Development/Dashboards/Opportunities.prpt\u0027];\n    \n    mapping.report5 = [[\u0027Case Type\u0027,\u0027SELECT_CASE_TYPE\u0027],[\u0027Date\u0027,\u0027SELECT_PERIOD\u0027]];\n    reports.report5 = [\u0027/public/SuiteCRM Analytics/Development/Dashboards/Cases.prpt\u0027];\n    \n \n \n \n "
+          },
+          {
+            "name" : "resourceType",
+            "type" : "Label",
+            "value" : "Javascript"
+          }
+        ],
+        "type" : "LayoutResourceCode",
+        "typeDesc" : "Resource"
+      },
+      {
+        "id" : "668eb278-505a-8f3b-00b3-dd4edf554906",
+        "parent" : "UnIqEiD",
+        "properties" : [
+          {
+            "name" : "name",
+            "type" : "Id",
+            "value" : "opts"
+          },
+          {
+            "name" : "resourceCode",
+            "type" : "Resource",
+            "value" : "var dashboardOpts = {\n    dashboardTitle: \u0022Report Executor\u0022,\n    dashboardSubtitle: \u0022 \u0022,\n    dashboardSection: \u0022dummy\u0022,\n    dashboardBreadcrumb:[\u0022Dashboards\u0022,\u0022Report Executor\u0022]\n} "
+          },
+          {
+            "name" : "resourceType",
+            "type" : "Label",
+            "value" : "Javascript"
+          }
+        ],
+        "type" : "LayoutResourceCode",
+        "typeDesc" : "Resource"
+      },
+      {
+        "id" : "cca577f5-56e0-4705-eb6b-7768332db608",
+        "parent" : "UnIqEiD",
+        "properties" : [
+          {
+            "name" : "name",
+            "type" : "Id",
+            "value" : ""
+          },
+          {
+            "name" : "height",
+            "type" : "Integer",
+            "value" : ""
+          },
+          {
+            "name" : "backgroundColor",
+            "type" : "Color",
+            "value" : ""
+          },
+          {
+            "name" : "roundCorners",
+            "type" : "RoundCorners",
+            "value" : ""
+          },
+          {
+            "name" : "textAlign",
+            "type" : "TextAlign",
+            "value" : ""
+          },
+          {
+            "name" : "cssClass",
+            "type" : "String",
+            "value" : ""
+          }
+        ],
+        "type" : "LayoutRow",
+        "typeDesc" : "Row"
+      },
+      {
+        "id" : "ab8ac69d-01c9-acb2-23ee-e84aa9964733",
+        "parent" : "cca577f5-56e0-4705-eb6b-7768332db608",
+        "properties" : [
+          {
+            "name" : "name",
+            "type" : "Id",
+            "value" : ""
+          },
+          {
+            "name" : "bootstrapExtraSmall",
+            "type" : "String",
+            "value" : "12"
+          },
+          {
+            "name" : "bootstrapSmall",
+            "type" : "String",
+            "value" : "12"
+          },
+          {
+            "name" : "bootstrapMedium",
+            "type" : "String",
+            "value" : "12"
+          },
+          {
+            "name" : "bootstrapLarge",
+            "type" : "String",
+            "value" : "12"
+          },
+          {
+            "name" : "bootstrapCssClass",
+            "type" : "String",
+            "value" : ""
+          },
+          {
+            "name" : "height",
+            "type" : "Integer",
+            "value" : ""
+          },
+          {
+            "name" : "backgroundColor",
+            "type" : "Color",
+            "value" : ""
+          },
+          {
+            "name" : "roundCorners",
+            "type" : "RoundCorners",
+            "value" : ""
+          },
+          {
+            "name" : "textAlign",
+            "type" : "TextAlign",
+            "value" : ""
+          },
+          {
+            "name" : "cssClass",
+            "type" : "String",
+            "value" : ""
+          }
+        ],
+        "type" : "LayoutBootstrapColumn",
+        "typeDesc" : "Column"
+      },
+      {
+        "id" : "f13456de-efb6-3e33-db52-bf61bd42683d",
+        "parent" : "ab8ac69d-01c9-acb2-23ee-e84aa9964733",
+        "properties" : [
+          {
+            "name" : "name",
+            "type" : "Id",
+            "value" : ""
+          },
+          {
+            "name" : "html",
+            "type" : "Html",
+            "value" : ""
+          },
+          {
+            "name" : "fontSize",
+            "type" : "Integer",
+            "value" : ""
+          },
+          {
+            "name" : "color",
+            "type" : "Color",
+            "value" : ""
+          },
+          {
+            "name" : "cssClass",
+            "type" : "String",
+            "value" : ""
+          }
+        ],
+        "type" : "LayoutHtml",
+        "typeDesc" : "Html"
+      },
+      {
+        "id" : "c39b38a8-f6af-f70c-e0d5-d8186969d682",
+        "parent" : "UnIqEiD",
+        "properties" : [
+          {
+            "name" : "name",
+            "type" : "Id",
+            "value" : ""
+          },
+          {
+            "name" : "height",
+            "type" : "Integer",
+            "value" : ""
+          },
+          {
+            "name" : "backgroundColor",
+            "type" : "Color",
+            "value" : ""
+          },
+          {
+            "name" : "roundCorners",
+            "type" : "RoundCorners",
+            "value" : ""
+          },
+          {
+            "name" : "textAlign",
+            "type" : "TextAlign",
+            "value" : ""
+          },
+          {
+            "name" : "cssClass",
+            "type" : "String",
+            "value" : ""
+          }
+        ],
+        "type" : "LayoutRow",
+        "typeDesc" : "Row"
+      },
+      {
+        "id" : "4de461d6-e54c-b6ab-54c3-3be1ae8dea1f",
+        "parent" : "c39b38a8-f6af-f70c-e0d5-d8186969d682",
+        "properties" : [
+          {
+            "name" : "name",
+            "type" : "Id",
+            "value" : "REPORT_PARAMETERS"
+          },
+          {
+            "name" : "bootstrapExtraSmall",
+            "type" : "String",
+            "value" : "12"
+          },
+          {
+            "name" : "bootstrapSmall",
+            "type" : "String",
+            "value" : "12"
+          },
+          {
+            "name" : "bootstrapMedium",
+            "type" : "String",
+            "value" : "2"
+          },
+          {
+            "name" : "bootstrapLarge",
+            "type" : "String",
+            "value" : "2"
+          },
+          {
+            "name" : "bootstrapCssClass",
+            "type" : "String",
+            "value" : ""
+          },
+          {
+            "name" : "height",
+            "type" : "Integer",
+            "value" : ""
+          },
+          {
+            "name" : "backgroundColor",
+            "type" : "Color",
+            "value" : ""
+          },
+          {
+            "name" : "roundCorners",
+            "type" : "RoundCorners",
+            "value" : ""
+          },
+          {
+            "name" : "textAlign",
+            "type" : "TextAlign",
+            "value" : ""
+          },
+          {
+            "name" : "cssClass",
+            "type" : "String",
+            "value" : ""
+          }
+        ],
+        "type" : "LayoutBootstrapColumn",
+        "typeDesc" : "Column"
+      },
+      {
+        "id" : "64927367-3335-56c0-db9f-bc41a8005472",
+        "parent" : "4de461d6-e54c-b6ab-54c3-3be1ae8dea1f",
+        "properties" : [
+          {
+            "name" : "name",
+            "type" : "Id",
+            "value" : ""
+          },
+          {
+            "name" : "html",
+            "type" : "Html",
+            "value" : "\u003Cdiv class=\u0022row\u0022\u003E\n    \u003Cdiv class=\u0022col-md-12\u0022\u003E\n        \u003Cdiv class=\u0022box box-default\u0022\u003E\n            \u003Cdiv class=\u0022box-header with-border\u0022\u003E\n                \u003Ci class=\u0022fa fa-filter\u0022\u003E\u003C/i\u003E\n                \u003Ch3 class=\u0022box-title\u0022\u003EReport Selector\u003C/h3\u003E\n                \u003Cdiv class=\u0022box-tools pull-right\u0022\u003E\n                    \u003Cbutton type=\u0022button\u0022 class=\u0022btn btn-box-tool\u0022 data-widget=\u0022collapse\u0022\u003E\u003Ci class=\u0022fa fa-minus\u0022\u003E\u003C/i\u003E\u003C/button\u003E\n                \u003C/div\u003E\n            \u003C/div\u003E\n            \u003Cdiv class=\u0022box-body\u0022\u003E\n                \u003Cdiv class=\u0022row\u0022\u003E\n                    \u003Cdiv class=\u0022col-md-12\u0022\u003E\n                        \u003Cform role=\u0022form\u0022\u003E\n                            \u003Cdiv class=\u0022form-group\u0022\u003E\n                                    \u003Cdiv class=\u0022row\u0022\u003E\n                                        \u003Cdiv class=\u0022col-md-12\u0022\u003E\n                                            \u003Clabel\u003EReport\u003C/label\u003E\n                                             \u003Cdiv id=\u0022selectReportAnchor\u0022\u003E\u003C/div\u003E   \n                                        \u003C/div\u003E\n                                    \u003C/div\u003E\n                            \u003C/div\u003E\n                        \u003C/form\u003E\n                    \u003C/div\u003E\n                \u003C/div\u003E\n            \u003C/div\u003E\n        \u003C/div\u003E\n    \u003C/div\u003E\n\u003C/div\u003E \n\n\u003Cdiv class=\u0022row\u0022 style=\u0022display: none;\u0022 id=\u0022parametersBox\u0022\u003E\n    \u003Cdiv class=\u0022col-md-12\u0022\u003E\n        \u003Cdiv class=\u0022box box-default\u0022\u003E\n            \u003Cdiv class=\u0022box-header with-border\u0022\u003E\n                \u003Ci class=\u0022fa fa-filter\u0022\u003E\u003C/i\u003E\n                \u003Ch3 class=\u0022box-title\u0022\u003EParameters\u003C/h3\u003E\n                \u003Cdiv class=\u0022box-tools pull-right\u0022\u003E\n                    \u003Cbutton type=\u0022button\u0022 class=\u0022btn btn-box-tool\u0022 data-widget=\u0022collapse\u0022\u003E\u003Ci class=\u0022fa fa-minus\u0022\u003E\u003C/i\u003E\u003C/button\u003E\n                \u003C/div\u003E\n            \u003C/div\u003E\n            \u003Cdiv class=\u0022box-body\u0022\u003E\n                \u003Cdiv class=\u0022row\u0022\u003E\n                    \u003Cdiv class=\u0022col-md-12\u0022\u003E\n                        \u003Cform role=\u0022form\u0022\u003E\n                            \u003Cdiv class=\u0022form-group\u0022 id=\u0022parameters\u0022\u003E\n                                    \u003Cdiv class=\u0022row\u0022\u003E\n                                        \u003Cdiv class=\u0022col-md-12\u0022\u003E\n                                            \u003Clabel\u003E\u003C/label\u003E\n                                             \u003Cdiv id=\u0022buttonExecuteReportAnchor\u0022\u003E\u003C/div\u003E   \n                                        \u003C/div\u003E\n                                    \u003C/div\u003E\n                            \u003C/div\u003E\n                        \u003C/form\u003E\n                    \u003C/div\u003E\n                \u003C/div\u003E\n            \u003C/div\u003E\n        \u003C/div\u003E     \n    \u003C/div\u003E\n    \n\u003C/div\u003E\n "
+          },
+          {
+            "name" : "fontSize",
+            "type" : "Integer",
+            "value" : ""
+          },
+          {
+            "name" : "color",
+            "type" : "Color",
+            "value" : ""
+          },
+          {
+            "name" : "cssClass",
+            "type" : "String",
+            "value" : ""
+          }
+        ],
+        "type" : "LayoutHtml",
+        "typeDesc" : "Html"
+      },
+      {
+        "id" : "4e959d92-adae-5191-2ec3-2bb9ba85c90b",
+        "parent" : "c39b38a8-f6af-f70c-e0d5-d8186969d682",
+        "properties" : [
+          {
+            "name" : "name",
+            "type" : "Id",
+            "value" : ""
+          },
+          {
+            "name" : "bootstrapExtraSmall",
+            "type" : "String",
+            "value" : "12"
+          },
+          {
+            "name" : "bootstrapSmall",
+            "type" : "String",
+            "value" : "12"
+          },
+          {
+            "name" : "bootstrapMedium",
+            "type" : "String",
+            "value" : "10"
+          },
+          {
+            "name" : "bootstrapLarge",
+            "type" : "String",
+            "value" : "10"
+          },
+          {
+            "name" : "bootstrapCssClass",
+            "type" : "String",
+            "value" : ""
+          },
+          {
+            "name" : "height",
+            "type" : "Integer",
+            "value" : ""
+          },
+          {
+            "name" : "backgroundColor",
+            "type" : "Color",
+            "value" : ""
+          },
+          {
+            "name" : "roundCorners",
+            "type" : "RoundCorners",
+            "value" : ""
+          },
+          {
+            "name" : "textAlign",
+            "type" : "TextAlign",
+            "value" : ""
+          },
+          {
+            "name" : "cssClass",
+            "type" : "String",
+            "value" : ""
+          }
+        ],
+        "type" : "LayoutBootstrapColumn",
+        "typeDesc" : "Column"
+      },
+      {
+        "id" : "f571186f-338a-8164-8994-ae85e057b97d",
+        "parent" : "4e959d92-adae-5191-2ec3-2bb9ba85c90b",
+        "properties" : [
+          {
+            "name" : "name",
+            "type" : "Id",
+            "value" : ""
+          },
+          {
+            "name" : "html",
+            "type" : "Html",
+            "value" : "\u003Cdiv class=\u0022box with-border\u0022\u003E\n    \u003Cdiv class=\u0022box-body\u0022\u003E\n        \u003Cdiv class=\u0022row\u0022\u003E\n            \u003Cdiv class=\u0022col-md-12\u0022 id=\u0022reportAnchor\u0022\u003E\u003C/div\u003E\n        \u003C/div\u003E\n    \u003C/div\u003E\n    \u003Cdiv class=\u0022box-footer\u0022\u003E\n        \u003Cdiv class=\u0022row\u0022\u003E\n            \u003Cdiv class=\u0022col-md-4\u0022 id=\u0022\u0022\u003E\n                Report Run Date: 01/01/2000\n            \u003C/div\u003E\n            \u003Cdiv class=\u0022col-md-4\u0022 id=\u0022\u0022\u003E\n                \n            \u003C/div\u003E\n            \u003Cdiv class=\u0022col-md-4\u0022 id=\u0022\u0022 style=\u0022text-align:right\u0022\u003E\n                Report Run By: Harris Ward\n            \u003C/div\u003E\n        \u003C/div\u003E\n    \u003C/div\u003E\n\u003C/div\u003E "
+          },
+          {
+            "name" : "fontSize",
+            "type" : "Integer",
+            "value" : ""
+          },
+          {
+            "name" : "color",
+            "type" : "Color",
+            "value" : ""
+          },
+          {
+            "name" : "cssClass",
+            "type" : "String",
+            "value" : ""
+          }
+        ],
+        "type" : "LayoutHtml",
+        "typeDesc" : "Html"
+      }
+    ],
+    "title" : "CDF - Sample structure"
+  }
+}

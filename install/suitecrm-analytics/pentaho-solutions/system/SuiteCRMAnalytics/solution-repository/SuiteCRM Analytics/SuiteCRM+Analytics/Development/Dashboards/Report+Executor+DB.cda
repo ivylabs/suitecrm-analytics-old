@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CDADescriptor>
+   <DataSources>
+      <Connection id="GET_REPORTS" type="sql.jndi">
+         <Jndi>SuiteCRMAnalytics</Jndi>
+      </Connection>
+      <Connection id="GET_REPORT_PARAMETER_MAPPING" type="sql.jndi">
+         <Jndi>SuiteCRMAnalytics</Jndi>
+      </Connection>
+   </DataSources>
+   <DataAccess access="public" connection="GET_REPORTS" id="GET_REPORTS" type="sql">
+      <Name>GET_REPORTS</Name>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters/>
+      <Query><![CDATA[SELECT DISTINCT(REPORT)
+FROM REPORT_PARAMETER_MAPPING;]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="GET_REPORT_PARAMETER_MAPPING"
+               id="GET_REPORT_PARAMETER_MAPPING"
+               type="sql">
+      <Name>GET_REPORT_PARAMETER_MAPPING</Name>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters>
+         <Parameter default="PARAM_REPORT" name="PARAM_REPORT" type="String"/>
+      </Parameters>
+      <Query><![CDATA[SELECT *
+FROM REPORT_PARAMETER_MAPPING
+WHERE REPORT = ${PARAM_REPORT}]]></Query>
+   </DataAccess>
+</CDADescriptor>

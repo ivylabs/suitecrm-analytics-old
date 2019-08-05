@@ -1,1 +1,310 @@
-{"components":{"rows":[{"id":"STANDARDCOMPONENTS","name":"Standard","parent":"UnIqEiD","properties":[{"name":"Group","type":"Label","value":"Standard"}],"type":"Label","typeDesc":"\u003Ci\u003EGroup\u003C/i\u003E"},{"id":"0becb6eb-949c-4152-8a3a-b58bc2538ea9","parent":"STANDARDCOMPONENTS","properties":[{"name":"name","type":"Id","value":"DBC1"},{"name":"listeners","type":"Listeners","value":"[]"},{"name":"dashboardPath","type":"String","value":""},{"name":"dataSourceMapping","type":"DataSourceMapping","value":"[]"},{"name":"oneWayMap","type":"Boolean","value":"false"},{"name":"parameterMapping","type":"ParameterMapping","value":"[]"},{"name":"priority","type":"Integer","value":5},{"name":"refreshPeriod","type":"Integer","value":""},{"name":"htmlObject","type":"HtmlObject","value":"${h:PARAMETERS}"},{"name":"executeAtStart","type":"Boolean","value":"true"},{"name":"preExecution","type":"JavaScript","value":"function d(){\n    \n    dash = this.dashboard;\n    dbc = this;\n    \n    if(dash.getParameterValue(\u0022REPORT\u0022) == \u0022Report1\u0022){\n        dbc.dashboardPath = \u0022/public/SuiteCRM Analytics/Dashboards/CommonReportFiltersComponent.wcdf\u0022;\n    } else {\n        dbc.dashboardPath = \u0022/public/SuiteCRM Analytics/Dashboards/OtherCommonReportFiltersComponent.wcdf\u0022;\n    }\n    \n    \n} "},{"name":"postExecution","type":"JavaScript","value":""}],"rowName":"Dashboard Component","type":"ComponentsDashboardComponent","typeDesc":"Dashboard Component"},{"id":"PARAMETERS","name":"Parameters","type":"Label","typeDesc":"\u003Ci\u003EGroup\u003C/i\u003E","parent":"UnIqEiD","properties":[{"name":"Group","value":"Parameters","type":"Label"}]},{"id":"5c42ac60-2386-e837-3648-b0f11b1dcc09","type":"ComponentsParameter","typeDesc":"Simple parameter","parent":"PARAMETERS","properties":[{"name":"name","value":"REPORT","type":"Id"},{"name":"propertyValue","value":"Report1111","type":"String"},{"name":"parameterViewRole","value":"unused","type":"parameterViewRoleCustom"},{"name":"bookmarkable","value":"false","type":"Boolean"},{"name":"public","value":"false","type":"Boolean"}],"rowName":"Simple Parameter"}]},"datasources":{"rows":[]},"filename":"/public/SuiteCRM+Analytics/Dashboards/MasterReportDashboard.cdfde","layout":{"rows":[{"id":"a3ed7d9a-21f0-7811-785a-952f30ba9694","parent":"UnIqEiD","properties":[{"name":"name","type":"Id","value":""},{"name":"height","type":"Integer","value":""},{"name":"backgroundColor","type":"Color","value":""},{"name":"roundCorners","type":"RoundCorners","value":""},{"name":"textAlign","type":"TextAlign","value":""},{"name":"cssClass","type":"String","value":""}],"type":"LayoutRow","typeDesc":"Row"},{"id":"48126e1e-be0d-1802-bc48-ca8b284fdb10","parent":"a3ed7d9a-21f0-7811-785a-952f30ba9694","properties":[{"name":"name","type":"Id","value":"PARAMETERS"},{"name":"bootstrapExtraSmall","type":"String","value":"12"},{"name":"bootstrapSmall","type":"String","value":"12"},{"name":"bootstrapMedium","type":"String","value":"2"},{"name":"bootstrapLarge","type":"String","value":"2"},{"name":"bootstrapCssClass","type":"String","value":""},{"name":"height","type":"Integer","value":""},{"name":"backgroundColor","type":"Color","value":""},{"name":"roundCorners","type":"RoundCorners","value":""},{"name":"textAlign","type":"TextAlign","value":""},{"name":"cssClass","type":"String","value":""}],"type":"LayoutBootstrapColumn","typeDesc":"Column"},{"id":"a57abb00-623c-db99-fd7e-400eed13132f","parent":"a3ed7d9a-21f0-7811-785a-952f30ba9694","properties":[{"name":"name","type":"Id","value":"REPORT"},{"name":"bootstrapExtraSmall","type":"String","value":"12"},{"name":"bootstrapSmall","type":"String","value":"12"},{"name":"bootstrapMedium","type":"String","value":"10"},{"name":"bootstrapLarge","type":"String","value":"10"},{"name":"bootstrapCssClass","type":"String","value":""},{"name":"height","type":"Integer","value":""},{"name":"backgroundColor","type":"Color","value":""},{"name":"roundCorners","type":"RoundCorners","value":""},{"name":"textAlign","type":"TextAlign","value":""},{"name":"cssClass","type":"String","value":""}],"type":"LayoutBootstrapColumn","typeDesc":"Column"}],"title":"CDF - Sample structure"}}
+{
+  "components" : {
+    "rows" : [
+      {
+        "id" : "STANDARDCOMPONENTS",
+        "name" : "Standard",
+        "parent" : "UnIqEiD",
+        "properties" : [
+          {
+            "name" : "Group",
+            "type" : "Label",
+            "value" : "Standard"
+          }
+        ],
+        "type" : "Label",
+        "typeDesc" : "\u003Ci\u003EGroup\u003C/i\u003E"
+      },
+      {
+        "id" : "0becb6eb-949c-4152-8a3a-b58bc2538ea9",
+        "parent" : "STANDARDCOMPONENTS",
+        "properties" : [
+          {
+            "name" : "name",
+            "type" : "Id",
+            "value" : "DBC1"
+          },
+          {
+            "name" : "listeners",
+            "type" : "Listeners",
+            "value" : "[]"
+          },
+          {
+            "name" : "dashboardPath",
+            "type" : "String",
+            "value" : ""
+          },
+          {
+            "name" : "dataSourceMapping",
+            "type" : "DataSourceMapping",
+            "value" : "[]"
+          },
+          {
+            "name" : "oneWayMap",
+            "type" : "Boolean",
+            "value" : "false"
+          },
+          {
+            "name" : "parameterMapping",
+            "type" : "ParameterMapping",
+            "value" : "[]"
+          },
+          {
+            "name" : "priority",
+            "type" : "Integer",
+            "value" : 5
+          },
+          {
+            "name" : "refreshPeriod",
+            "type" : "Integer",
+            "value" : ""
+          },
+          {
+            "name" : "htmlObject",
+            "type" : "HtmlObject",
+            "value" : "${h:PARAMETERS}"
+          },
+          {
+            "name" : "executeAtStart",
+            "type" : "Boolean",
+            "value" : "true"
+          },
+          {
+            "name" : "preExecution",
+            "type" : "JavaScript",
+            "value" : "function d(){\n    \n    dash = this.dashboard;\n    dbc = this;\n    \n    if(dash.getParameterValue(\u0022REPORT\u0022) == \u0022Report1\u0022){\n        dbc.dashboardPath = \u0022/public/SuiteCRM Analytics/Development/Dashboards/CommonReportFiltersComponent.wcdf\u0022;\n    } else {\n        dbc.dashboardPath = \u0022/public/SuiteCRM Analytics/Development/Dashboards/OtherCommonReportFiltersComponent.wcdf\u0022;\n    }\n    \n    \n} "
+          },
+          {
+            "name" : "postExecution",
+            "type" : "JavaScript",
+            "value" : ""
+          }
+        ],
+        "rowName" : "Dashboard Component",
+        "type" : "ComponentsDashboardComponent",
+        "typeDesc" : "Dashboard Component"
+      },
+      {
+        "id" : "PARAMETERS",
+        "name" : "Parameters",
+        "parent" : "UnIqEiD",
+        "properties" : [
+          {
+            "name" : "Group",
+            "type" : "Label",
+            "value" : "Parameters"
+          }
+        ],
+        "type" : "Label",
+        "typeDesc" : "\u003Ci\u003EGroup\u003C/i\u003E"
+      },
+      {
+        "id" : "5c42ac60-2386-e837-3648-b0f11b1dcc09",
+        "parent" : "PARAMETERS",
+        "properties" : [
+          {
+            "name" : "name",
+            "type" : "Id",
+            "value" : "REPORT"
+          },
+          {
+            "name" : "propertyValue",
+            "type" : "String",
+            "value" : "Report1111"
+          },
+          {
+            "name" : "parameterViewRole",
+            "type" : "parameterViewRoleCustom",
+            "value" : "unused"
+          },
+          {
+            "name" : "bookmarkable",
+            "type" : "Boolean",
+            "value" : "false"
+          },
+          {
+            "name" : "public",
+            "type" : "Boolean",
+            "value" : "false"
+          }
+        ],
+        "rowName" : "Simple Parameter",
+        "type" : "ComponentsParameter",
+        "typeDesc" : "Simple parameter"
+      }
+    ]
+  },
+  "datasources" : {
+    "rows" : [ ]
+  },
+  "filename" : "/public/SuiteCRM+Analytics/Development/Dashboards/MasterReportDashboard.cdfde",
+  "layout" : {
+    "rows" : [
+      {
+        "id" : "a3ed7d9a-21f0-7811-785a-952f30ba9694",
+        "parent" : "UnIqEiD",
+        "properties" : [
+          {
+            "name" : "name",
+            "type" : "Id",
+            "value" : ""
+          },
+          {
+            "name" : "height",
+            "type" : "Integer",
+            "value" : ""
+          },
+          {
+            "name" : "backgroundColor",
+            "type" : "Color",
+            "value" : ""
+          },
+          {
+            "name" : "roundCorners",
+            "type" : "RoundCorners",
+            "value" : ""
+          },
+          {
+            "name" : "textAlign",
+            "type" : "TextAlign",
+            "value" : ""
+          },
+          {
+            "name" : "cssClass",
+            "type" : "String",
+            "value" : ""
+          }
+        ],
+        "type" : "LayoutRow",
+        "typeDesc" : "Row"
+      },
+      {
+        "id" : "48126e1e-be0d-1802-bc48-ca8b284fdb10",
+        "parent" : "a3ed7d9a-21f0-7811-785a-952f30ba9694",
+        "properties" : [
+          {
+            "name" : "name",
+            "type" : "Id",
+            "value" : "PARAMETERS"
+          },
+          {
+            "name" : "bootstrapExtraSmall",
+            "type" : "String",
+            "value" : "12"
+          },
+          {
+            "name" : "bootstrapSmall",
+            "type" : "String",
+            "value" : "12"
+          },
+          {
+            "name" : "bootstrapMedium",
+            "type" : "String",
+            "value" : "2"
+          },
+          {
+            "name" : "bootstrapLarge",
+            "type" : "String",
+            "value" : "2"
+          },
+          {
+            "name" : "bootstrapCssClass",
+            "type" : "String",
+            "value" : ""
+          },
+          {
+            "name" : "height",
+            "type" : "Integer",
+            "value" : ""
+          },
+          {
+            "name" : "backgroundColor",
+            "type" : "Color",
+            "value" : ""
+          },
+          {
+            "name" : "roundCorners",
+            "type" : "RoundCorners",
+            "value" : ""
+          },
+          {
+            "name" : "textAlign",
+            "type" : "TextAlign",
+            "value" : ""
+          },
+          {
+            "name" : "cssClass",
+            "type" : "String",
+            "value" : ""
+          }
+        ],
+        "type" : "LayoutBootstrapColumn",
+        "typeDesc" : "Column"
+      },
+      {
+        "id" : "a57abb00-623c-db99-fd7e-400eed13132f",
+        "parent" : "a3ed7d9a-21f0-7811-785a-952f30ba9694",
+        "properties" : [
+          {
+            "name" : "name",
+            "type" : "Id",
+            "value" : "REPORT"
+          },
+          {
+            "name" : "bootstrapExtraSmall",
+            "type" : "String",
+            "value" : "12"
+          },
+          {
+            "name" : "bootstrapSmall",
+            "type" : "String",
+            "value" : "12"
+          },
+          {
+            "name" : "bootstrapMedium",
+            "type" : "String",
+            "value" : "10"
+          },
+          {
+            "name" : "bootstrapLarge",
+            "type" : "String",
+            "value" : "10"
+          },
+          {
+            "name" : "bootstrapCssClass",
+            "type" : "String",
+            "value" : ""
+          },
+          {
+            "name" : "height",
+            "type" : "Integer",
+            "value" : ""
+          },
+          {
+            "name" : "backgroundColor",
+            "type" : "Color",
+            "value" : ""
+          },
+          {
+            "name" : "roundCorners",
+            "type" : "RoundCorners",
+            "value" : ""
+          },
+          {
+            "name" : "textAlign",
+            "type" : "TextAlign",
+            "value" : ""
+          },
+          {
+            "name" : "cssClass",
+            "type" : "String",
+            "value" : ""
+          }
+        ],
+        "type" : "LayoutBootstrapColumn",
+        "typeDesc" : "Column"
+      }
+    ],
+    "title" : "CDF - Sample structure"
+  }
+}

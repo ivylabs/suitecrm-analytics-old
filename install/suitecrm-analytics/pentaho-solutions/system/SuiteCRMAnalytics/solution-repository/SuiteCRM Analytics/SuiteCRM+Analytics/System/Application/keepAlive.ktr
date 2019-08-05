@@ -645,7 +645,7 @@
     <access>JNDI</access>
     <database>SuiteCRMAnalytics</database>
     <port>0</port>
-    <username>suitecrmrootuser@142.93.33.2</username>
+    <username>suitecrmrootuser@178.62.93.222</username>
     <password>Encrypted </password>
     <servername/>
     <data_tablespace/>

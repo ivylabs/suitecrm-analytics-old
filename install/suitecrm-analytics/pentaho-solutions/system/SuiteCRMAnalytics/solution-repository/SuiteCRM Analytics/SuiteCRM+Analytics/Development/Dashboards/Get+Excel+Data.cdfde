@@ -1,0 +1,505 @@
+{
+  "components" : {
+    "rows" : [
+      {
+        "id" : "PARAMETERS",
+        "name" : "Parameters",
+        "parent" : "UnIqEiD",
+        "properties" : [
+          {
+            "name" : "Group",
+            "type" : "Label",
+            "value" : "Parameters"
+          }
+        ],
+        "type" : "Label",
+        "typeDesc" : "\u003Ci\u003EGroup\u003C/i\u003E"
+      },
+      {
+        "id" : "2847339c-d9d8-5281-491b-aec9b5be38f3",
+        "parent" : "PARAMETERS",
+        "properties" : [
+          {
+            "name" : "name",
+            "type" : "Id",
+            "value" : "PARAM_STRING_TWO"
+          },
+          {
+            "name" : "propertyValue",
+            "type" : "String",
+            "value" : "Sample String Two"
+          },
+          {
+            "name" : "parameterViewRole",
+            "type" : "parameterViewRoleCustom",
+            "value" : "unused"
+          },
+          {
+            "name" : "bookmarkable",
+            "type" : "Boolean",
+            "value" : "false"
+          },
+          {
+            "name" : "public",
+            "type" : "Boolean",
+            "value" : "false"
+          }
+        ],
+        "rowName" : "Simple Parameter",
+        "type" : "ComponentsParameter",
+        "typeDesc" : "Simple parameter"
+      },
+      {
+        "id" : "4faec593-f15a-ecc6-f12f-45d56ecc3981",
+        "parent" : "PARAMETERS",
+        "properties" : [
+          {
+            "name" : "name",
+            "type" : "Id",
+            "value" : "PARAM_STRING"
+          },
+          {
+            "name" : "propertyValue",
+            "type" : "String",
+            "value" : "Sample String"
+          },
+          {
+            "name" : "parameterViewRole",
+            "type" : "parameterViewRoleCustom",
+            "value" : "unused"
+          },
+          {
+            "name" : "bookmarkable",
+            "type" : "Boolean",
+            "value" : "false"
+          },
+          {
+            "name" : "public",
+            "type" : "Boolean",
+            "value" : "false"
+          }
+        ],
+        "rowName" : "Simple Parameter",
+        "type" : "ComponentsParameter",
+        "typeDesc" : "Simple parameter"
+      },
+      {
+        "id" : "IVYISBOOTSTRAP",
+        "name" : "Ivy IS Bootstrap",
+        "parent" : "UnIqEiD",
+        "properties" : [
+          {
+            "name" : "Group",
+            "type" : "Label",
+            "value" : "Ivy IS Bootstrap"
+          }
+        ],
+        "type" : "Label",
+        "typeDesc" : "\u003Ci\u003EGroup\u003C/i\u003E"
+      },
+      {
+        "id" : "c1b33245-7c97-c867-430e-36ecaa1aacf0",
+        "parent" : "IVYISBOOTSTRAP",
+        "properties" : [
+          {
+            "name" : "name",
+            "type" : "Id",
+            "value" : "BUTTON_REFRESH"
+          },
+          {
+            "name" : "label",
+            "type" : "String",
+            "value" : "Run"
+          },
+          {
+            "name" : "listeners",
+            "type" : "Listeners",
+            "value" : "[]"
+          },
+          {
+            "name" : "expression",
+            "type" : "JavaScript",
+            "value" : "function d(){\n    window.open(\u0022http://localhost:8080/suitecrmanalytics/plugin/SuiteCRMAnalytics/api/getExcelData?paramSTRING_TO_SET=\u0022+PARAM_STRING+\u0022\u0026paramPARAM_STRING_TWO=\u0022+PARAM_STRING_TWO);\n} "
+          },
+          {
+            "name" : "priority",
+            "type" : "Integer",
+            "value" : 5
+          },
+          {
+            "name" : "refreshPeriod",
+            "type" : "Integer",
+            "value" : ""
+          },
+          {
+            "name" : "buttonType",
+            "type" : "buttonTypeCustom",
+            "value" : "btn-primary"
+          },
+          {
+            "name" : "buttonBlock",
+            "type" : "Boolean",
+            "value" : "true"
+          },
+          {
+            "name" : "buttonSize",
+            "type" : "buttonSizeCustom",
+            "value" : ""
+          },
+          {
+            "name" : "prependIcon",
+            "type" : "Boolean",
+            "value" : "False"
+          },
+          {
+            "name" : "buttonIcon",
+            "type" : "buttonIconCustom",
+            "value" : "none"
+          },
+          {
+            "name" : "buttonDisabled",
+            "type" : "Boolean",
+            "value" : "false"
+          },
+          {
+            "name" : "htmlObject",
+            "type" : "HtmlObject",
+            "value" : "${h:refreshDashboardAnchor}"
+          },
+          {
+            "name" : "executeAtStart",
+            "type" : "Boolean",
+            "value" : "true"
+          },
+          {
+            "name" : "preExecution",
+            "type" : "JavaScript",
+            "value" : ""
+          },
+          {
+            "name" : "postExecution",
+            "type" : "JavaScript",
+            "value" : ""
+          }
+        ],
+        "rowName" : "Bootstrap Button",
+        "type" : "ComponentsBSButtonComponent",
+        "typeDesc" : "Bootstrap Button"
+      },
+      {
+        "id" : "b8e83577-0bce-4792-450d-60d17cac7a56",
+        "parent" : "IVYISBOOTSTRAP",
+        "properties" : [
+          {
+            "name" : "name",
+            "type" : "Id",
+            "value" : "INPUT_STRING_TWO"
+          },
+          {
+            "name" : "parameter",
+            "type" : "Parameter",
+            "value" : "${p:PARAM_STRING_TWO}"
+          },
+          {
+            "name" : "listeners",
+            "type" : "Listeners",
+            "value" : "[]"
+          },
+          {
+            "name" : "priority",
+            "type" : "Integer",
+            "value" : 5
+          },
+          {
+            "name" : "inputType",
+            "type" : "inputTypeCustom",
+            "value" : "text"
+          },
+          {
+            "name" : "inputSize",
+            "type" : "inputSizeCustom",
+            "value" : ""
+          },
+          {
+            "name" : "textInputPlaceholder",
+            "type" : "String",
+            "value" : ""
+          },
+          {
+            "name" : "htmlObject",
+            "type" : "HtmlObject",
+            "value" : "${h:textInputTwoAnchor}"
+          },
+          {
+            "name" : "executeAtStart",
+            "type" : "Boolean",
+            "value" : "true"
+          },
+          {
+            "name" : "preExecution",
+            "type" : "JavaScript",
+            "value" : ""
+          },
+          {
+            "name" : "postExecution",
+            "type" : "JavaScript",
+            "value" : ""
+          },
+          {
+            "name" : "preChange",
+            "type" : "JavaScript",
+            "value" : ""
+          },
+          {
+            "name" : "postChange",
+            "type" : "JavaScript",
+            "value" : ""
+          }
+        ],
+        "rowName" : "Bootstrap Input",
+        "type" : "ComponentsBSInputComponent",
+        "typeDesc" : "Bootstrap Input"
+      },
+      {
+        "id" : "c92e6c6f-2a58-d765-ec3a-081d6bd07d0a",
+        "parent" : "IVYISBOOTSTRAP",
+        "properties" : [
+          {
+            "name" : "name",
+            "type" : "Id",
+            "value" : "INPUT_STRING"
+          },
+          {
+            "name" : "parameter",
+            "type" : "Parameter",
+            "value" : "${p:PARAM_STRING}"
+          },
+          {
+            "name" : "listeners",
+            "type" : "Listeners",
+            "value" : "[]"
+          },
+          {
+            "name" : "priority",
+            "type" : "Integer",
+            "value" : 5
+          },
+          {
+            "name" : "inputType",
+            "type" : "inputTypeCustom",
+            "value" : "text"
+          },
+          {
+            "name" : "inputSize",
+            "type" : "inputSizeCustom",
+            "value" : ""
+          },
+          {
+            "name" : "textInputPlaceholder",
+            "type" : "String",
+            "value" : ""
+          },
+          {
+            "name" : "htmlObject",
+            "type" : "HtmlObject",
+            "value" : "${h:textInputAnchor}"
+          },
+          {
+            "name" : "executeAtStart",
+            "type" : "Boolean",
+            "value" : "true"
+          },
+          {
+            "name" : "preExecution",
+            "type" : "JavaScript",
+            "value" : ""
+          },
+          {
+            "name" : "postExecution",
+            "type" : "JavaScript",
+            "value" : ""
+          },
+          {
+            "name" : "preChange",
+            "type" : "JavaScript",
+            "value" : ""
+          },
+          {
+            "name" : "postChange",
+            "type" : "JavaScript",
+            "value" : ""
+          }
+        ],
+        "rowName" : "Bootstrap Input",
+        "type" : "ComponentsBSInputComponent",
+        "typeDesc" : "Bootstrap Input"
+      }
+    ]
+  },
+  "datasources" : {
+    "rows" : [ ]
+  },
+  "filename" : "/public/SuiteCRM+Analytics/Development/Dashboards/Get+Excel+Data.cdfde",
+  "layout" : {
+    "rows" : [
+      {
+        "id" : "11044e9c-3f5b-02f2-9bc4-7a24e4ffc823",
+        "parent" : "UnIqEiD",
+        "properties" : [
+          {
+            "name" : "name",
+            "type" : "Id",
+            "value" : "opts"
+          },
+          {
+            "name" : "resourceCode",
+            "type" : "Resource",
+            "value" : "var dashboardOpts = {\n    dashboardTitle: \u0022Get Excel Data\u0022,\n    dashboardSubtitle: \u0022 \u0022,\n    dashboardSection: \u0022dummy\u0022,\n    dashboardBreadcrumb:[\u0022Dashboards\u0022,\u0022Get Excel Data\u0022]\n} "
+          },
+          {
+            "name" : "resourceType",
+            "type" : "Label",
+            "value" : "Javascript"
+          }
+        ],
+        "type" : "LayoutResourceCode",
+        "typeDesc" : "Resource"
+      },
+      {
+        "id" : "1b7c960c-dcac-b65e-8999-4ecf8e12f4aa",
+        "parent" : "UnIqEiD",
+        "properties" : [
+          {
+            "name" : "name",
+            "type" : "Id",
+            "value" : ""
+          },
+          {
+            "name" : "height",
+            "type" : "Integer",
+            "value" : ""
+          },
+          {
+            "name" : "backgroundColor",
+            "type" : "Color",
+            "value" : ""
+          },
+          {
+            "name" : "roundCorners",
+            "type" : "RoundCorners",
+            "value" : ""
+          },
+          {
+            "name" : "textAlign",
+            "type" : "TextAlign",
+            "value" : ""
+          },
+          {
+            "name" : "cssClass",
+            "type" : "String",
+            "value" : ""
+          }
+        ],
+        "type" : "LayoutRow",
+        "typeDesc" : "Row"
+      },
+      {
+        "id" : "2d89e823-10a0-b966-2c80-bda1d846816f",
+        "parent" : "1b7c960c-dcac-b65e-8999-4ecf8e12f4aa",
+        "properties" : [
+          {
+            "name" : "name",
+            "type" : "Id",
+            "value" : ""
+          },
+          {
+            "name" : "bootstrapExtraSmall",
+            "type" : "String",
+            "value" : "12"
+          },
+          {
+            "name" : "bootstrapSmall",
+            "type" : "String",
+            "value" : "12"
+          },
+          {
+            "name" : "bootstrapMedium",
+            "type" : "String",
+            "value" : "12"
+          },
+          {
+            "name" : "bootstrapLarge",
+            "type" : "String",
+            "value" : "12"
+          },
+          {
+            "name" : "bootstrapCssClass",
+            "type" : "String",
+            "value" : ""
+          },
+          {
+            "name" : "height",
+            "type" : "Integer",
+            "value" : ""
+          },
+          {
+            "name" : "backgroundColor",
+            "type" : "Color",
+            "value" : ""
+          },
+          {
+            "name" : "roundCorners",
+            "type" : "RoundCorners",
+            "value" : ""
+          },
+          {
+            "name" : "textAlign",
+            "type" : "TextAlign",
+            "value" : ""
+          },
+          {
+            "name" : "cssClass",
+            "type" : "String",
+            "value" : ""
+          }
+        ],
+        "type" : "LayoutBootstrapColumn",
+        "typeDesc" : "Column"
+      },
+      {
+        "id" : "643c765f-4496-c2ee-f569-43baad20fa58",
+        "parent" : "2d89e823-10a0-b966-2c80-bda1d846816f",
+        "properties" : [
+          {
+            "name" : "name",
+            "type" : "Id",
+            "value" : ""
+          },
+          {
+            "name" : "html",
+            "type" : "Html",
+            "value" : "\u003Cdiv class=\u0022box box-default\u0022\u003E\n    \u003Cdiv class=\u0022box-header with-border\u0022\u003E\n        \u003Ci class=\u0022fa fa-filter\u0022\u003E\u003C/i\u003E\n        \u003Ch3 class=\u0022box-title\u0022\u003EFilters\u003C/h3\u003E\n        \u003Cdiv class=\u0022box-tools pull-right\u0022\u003E\n            \u003Cbutton type=\u0022button\u0022 class=\u0022btn btn-box-tool\u0022 data-widget=\u0022collapse\u0022\u003E\u003Ci class=\u0022fa fa-minus\u0022\u003E\u003C/i\u003E\u003C/button\u003E\n        \u003C/div\u003E\n    \u003C/div\u003E\n    \u003Cdiv class=\u0022box-body\u0022\u003E\n        \u003Cdiv class=\u0022row\u0022\u003E\n            \u003Cdiv class=\u0022col-md-12\u0022\u003E\n                \u003Cform role=\u0022form\u0022\u003E\n                    \u003Cdiv class=\u0022form-group\u0022\u003E\n                            \u003Cdiv class=\u0022row\u0022\u003E\n                                \u003Cdiv class=\u0022col-md-3\u0022\u003E\n                                    \u003Clabel\u003EString to Inject into the Excel Sheet\u003C/label\u003E\n                                     \u003Cdiv id=\u0022textInputAnchor\u0022\u003E\u003C/div\u003E   \n                                \u003C/div\u003E\n                                \u003Cdiv class=\u0022col-md-3\u0022\u003E\n                                    \u003Clabel\u003EString Two Parameter\u003C/label\u003E\n                                     \u003Cdiv id=\u0022textInputTwoAnchor\u0022\u003E\u003C/div\u003E   \n                                \u003C/div\u003E\n                                \u003Cdiv class=\u0022col-md-3 col-md-offset-3\u0022\u003E\n                                    \u003Clabel\u003E\u0026nbsp;\u003C/label\u003E\n                                     \u003Cdiv id=\u0022refreshDashboardAnchor\u0022\u003E\u003C/div\u003E   \n                                \u003C/div\u003E\n                            \u003C/div\u003E\n                    \u003C/div\u003E\n                \u003C/form\u003E\n            \u003C/div\u003E\n        \u003C/div\u003E\n    \u003C/div\u003E\n\u003C/div\u003E "
+          },
+          {
+            "name" : "fontSize",
+            "type" : "Integer",
+            "value" : ""
+          },
+          {
+            "name" : "color",
+            "type" : "Color",
+            "value" : ""
+          },
+          {
+            "name" : "cssClass",
+            "type" : "String",
+            "value" : ""
+          }
+        ],
+        "type" : "LayoutHtml",
+        "typeDesc" : "Html"
+      }
+    ],
+    "title" : "CDF - Sample structure"
+  }
+}
